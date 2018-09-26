@@ -1,0 +1,7 @@
+@include font-face("CenturyGothic", font-files("/fonts/CenturyGothic.ttf", "/fonts/CenturyGothic.eot", "/fonts/CenturyGothic.woff"));
+@include font-face("CenturyGothicBold", font-files("/fonts/CenturyGothic-Bold.ttf", "/fonts/CenturyGothic-Bold.eot", "/fonts/CenturyGothic-Bold.woff"));
+
+$darkGrey: #565c64
+$grey: #5d626a; //font subname
+$middleGrey: #cbcfd5; //font at footer
+$lightGrey: #f3f3f3;
