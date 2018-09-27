@@ -1,7 +1,11 @@
-@include font-face("CenturyGothic", font-files("/fonts/CenturyGothic.ttf", "/fonts/CenturyGothic.eot", "/fonts/CenturyGothic.woff"));
-@include font-face("CenturyGothicBold", font-files("/fonts/CenturyGothic-Bold.ttf", "/fonts/CenturyGothic-Bold.eot", "/fonts/CenturyGothic-Bold.woff"));
+@import "compass/css3";
+@include font-face("CenturyGothic", font-files("CenturyGothic.ttf", "CenturyGothic.eot", "CenturyGothic.woff"));
+@include font-face("CenturyGothicBold", font-files("CenturyGothic-Bold.ttf", "CenturyGothic-Bold.eot", "CenturyGothic-Bold.woff"));
 
-$darkGrey: #565c64
-$grey: #5d626a; //font subname
-$middleGrey: #cbcfd5; //font at footer
+$darkGrey: #565c64;
+ /*header_fix, second_header, copyr*/
+$grey: #5d626a;
+ /*font subname, header_abs*/
+$middleGrey: #cbcfd5;
+/*font at footer*/
 $lightGrey: #f3f3f3;

@@ -27,44 +27,37 @@ $(window).load(function() {
 });
 
 
-$(document).ready(function(){
-	if (window.innerWidth < 768 ){
-		$('.one_inner').bxSlider({
-			auto: true,
-		  // mode: 'fade',
-		  pager: true,
-		})
-	}
-})
+// $(document).ready(function(){
+// 	if (window.innerWidth < 768 ){
+// 		$('.one_inner').bxSlider({
+// 			auto: true,
+// 		  // mode: 'fade',
+// 		  pager: true,
+// 		})
+// 	}
+// })
 
-
-// menu
-
-jQuery(document).ready(function($){
-	var isLateralNavAnimating = false;
-
-	//open/close lateral navigation
-	$('.cd-nav-trigger').on('click', function(event){
-		event.preventDefault();
-		//stop if nav animation is running
-		if( !isLateralNavAnimating ) {
-			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true;
-
-			$('body').toggleClass('navigation-is-open');
-      if ( $('body').hasClass('navigation-is-open')){
-        $('.cd-nav .line_right').addClass('line__active')
-      }
-      else {
-        $('.cd-nav .line_right').removeClass('line__active')
-      }
-			$('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-				//animation is over
-				isLateralNavAnimating = false;
-			});
-		}
-	});
-});
-
+// slider for main page header
+var bxConfig = {
+  auto: true,
+  mode: 'fade',
+  pager: false,
+  captions: false,
+  controls: false,
+  easing: 'ease-in-out',
+  onSliderLoad: function(currentIndex) {
+    $(".main_one__name").html($('.one_gallery__item').eq(currentIndex).attr('data-name'));
+    $(".main_one__descr").html($('.one_gallery__item').eq(currentIndex).attr('data-descr'));
+    var href = $('.one_gallery__item').eq(currentIndex).attr('data-href');
+    $(".main_one__Link").attr('href', href);
+  },
+  onSlideBefore: function($slideElement, oldIndex, newIndex) {
+    $(".main_one__name").html($slideElement.attr("data-name"));
+    $(".main_one__descr").html($slideElement.attr("data-descr"));
+    $(".main_one__Link").attr('href', $slideElement.attr("data-href"));
+  }
+};
+var bxSlider = $('.main_one__gallery').bxSlider(bxConfig);
 
 
 ////open modal_window
@@ -85,28 +78,6 @@ $(document).on('click', '.close_modal_window', function(){
 	$('.overlay').fadeOut(300)
 });
 
-// slider for main page header
-var bxConfig = {
-  auto: true,
-  mode: 'fade',
-  pager: false,
-  captions: false,
-  controls: false,
-  easing: 'ease-in-out',
-  onSliderLoad: function(currentIndex) {
-    $(".from_title").html($('.gallery__item').eq(currentIndex).attr('data-title'));
-    $(".from_minute").html($('.gallery__item').eq(currentIndex).attr('data-minute'));
-    $(".from_metro").html($('.gallery__item').eq(currentIndex).attr('data-metro'));
-
-  },
-  onSlideBefore: function($slideElement, oldIndex, newIndex) {
-    $(".from_title").html($slideElement.attr("data-title"));
-    $(".from_minute").html($slideElement.attr("data-minute"));
-    $(".from_metro").html($slideElement.attr('data-metro'));
-
-  }
-};
-var bxSlider = $('.header_gallery').bxSlider(bxConfig);
 
 // Кастомные клики влево\вправо
 $('.slider_next').click(function() {
