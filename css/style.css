@@ -316,35 +316,47 @@ body {
   -webkit-transition: .36s;
   padding-bottom: 14px;
 }
+/* line 179, ../sass/style.scss */
+.menu_hover__item .subname, .menu_hover__item .content_text {
+  text-align: center;
+}
 
-/* line 180, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .menu_hover__item:hover {
   background-color: #5d626a;
 }
 
-/* line 183, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
+.content_name {
+  font-size: 36px;
+  color: #5d626a;
+  margin: 20px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 193, ../sass/style.scss */
 .subname {
   font-size: 18px;
   text-transform: uppercase;
-  text-align: center;
   margin: 16px 0 10px;
 }
 
-/* line 189, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .content_text {
   font-size: 14px;
   line-height: 1.6;
   color: #cbcfd5;
-  text-align: center;
 }
 
-/* line 195, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .main_one {
   height: 100vh;
+  min-height: 750px;
   position: relative;
 }
 
-/* line 199, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .main_one:before {
   content: '';
   position: absolute;
@@ -356,34 +368,35 @@ body {
   z-index: 55;
 }
 
-/* line 209, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .one_gallery__item {
   height: 100vh;
+  min-height: 750px;
   background-size: cover;
   background-position: center;
 }
 
-/* line 215, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .one_gallery__item_1 {
   background-image: url(/img/main/main_1.jpg);
 }
 
-/* line 218, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 .one_gallery__item_2 {
   background-image: url(/img/main/main_2.jpg);
 }
 
-/* line 221, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .one_gallery__item_3 {
   background-image: url(/img/main/main_3.jpg);
 }
 
-/* line 224, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .one_gallery__item_4 {
   background-image: url(/img/main/main_4.jpg);
 }
 
-/* line 227, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .main_one__inner {
   position: absolute;
   left: 0;
@@ -392,39 +405,39 @@ body {
   color: #ffffff;
 }
 
-/* line 234, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 .main_one__name {
   font-size: 36px;
   text-transform: uppercase;
 }
 
-/* line 238, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 .main_one__descr {
   max-width: 520px;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-/* line 243, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 .main_one__Link {
   font-family: 'CenturyGothicBold';
   font-size: 16px;
   display: flex;
   align-items: center;
 }
-/* line 248, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .main_one__Link .long_arrow {
   margin: 0 12px;
 }
 
-/* line 253, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .long_arrow {
   width: 108px;
   height: 15px;
   fill: #ffffff;
 }
 
-/* line 258, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 .main_one__caption {
   position: absolute;
   width: 100%;
@@ -437,13 +450,320 @@ body {
   z-index: 55;
 }
 
-/* line 269, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .main_one__slide_left,
 .main_one__slide_right {
   color: #fff;
 }
 
-/* line 273, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 .main_one__slide_left {
   text-align: right;
+}
+
+/* line 286, ../sass/style.scss */
+.main_banner {
+  padding: 24px 0;
+}
+
+/* line 290, ../sass/style.scss */
+.main_project__box {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+}
+
+/* line 296, ../sass/style.scss */
+.main_project__item {
+  width: 30%;
+  margin: 20px 0;
+}
+
+/* line 300, ../sass/style.scss */
+.main_project__item figure,
+.main_news__item figure {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* line 307, ../sass/style.scss */
+.main_project__item figure > img,
+.main_news__item figure > img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-transition: -webkit-transform 1.2s;
+  transition: transform 1.2s;
+}
+
+/* line 319, ../sass/style.scss */
+.main_project__item figure > img {
+  height: 385px;
+}
+
+/* line 323, ../sass/style.scss */
+.main_project__item figure figcaption,
+.main_news__item figure figcaption {
+  padding: 2em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 329, ../sass/style.scss */
+.main_project__item figure figcaption::before,
+.main_project__item figure figcaption::after,
+.main_news__item figure figcaption::before,
+.main_news__item figure figcaption:after {
+  pointer-events: none;
+}
+
+/* line 335, ../sass/style.scss */
+.main_project__item figure figcaption,
+.main_project__item figure > a,
+.main_news__item figure figcaption,
+.main_news__item figure a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 345, ../sass/style.scss */
+figure.effect-sadie figcaption::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(86, 92, 100, 0.4) 0%, rgba(86, 92, 100, 0.9) 75%);
+  background: linear-gradient(to bottom, rgba(86, 92, 100, 0.4) 0%, rgba(86, 92, 100, 0.9) 75%);
+  opacity: 0;
+  -webkit-transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, 50%, 0);
+}
+
+/* line 359, ../sass/style.scss */
+.main_project__logo {
+  width: 65%;
+  max-width: 180px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.8s, opacity 0.9s;
+  transition: transform 0.8s, opacity 0.9s;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+/* line 371, ../sass/style.scss */
+figure.effect-sadie figcaption::before {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 375, ../sass/style.scss */
+figure.effect-sadie:hover .main_project__logo {
+  opacity: 1;
+  -webkit-transform: translate3d(-50%, -50%, 0) translate3d(0, -40px, 0);
+  transform: translate3d(-50%, -50%, 0) translate3d(0, -40px, 0);
+}
+
+/* line 380, ../sass/style.scss */
+figure.effect-sadie:hover > img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* line 385, ../sass/style.scss */
+figure.effect-sadie:hover figcaption::before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 390, ../sass/style.scss */
+.main_project__descr {
+  color: #5d626a;
+  text-align: left;
+}
+/* line 393, ../sass/style.scss */
+.main_project__descr .content_text {
+  text-align: left;
+  color: #5d626a;
+}
+
+/* line 399, ../sass/style.scss */
+.main_map {
+  padding: 40px 0;
+}
+
+/* line 402, ../sass/style.scss */
+.main_map__inner {
+  width: 100%;
+  height: 490px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 408, ../sass/style.scss */
+.main_news {
+  background-color: #cbcfd5;
+  padding: 50px 0 160px;
+}
+
+/* line 412, ../sass/style.scss */
+.grey_button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 14px;
+  background: #f3f3f3;
+}
+
+/* line 418, ../sass/style.scss */
+.main_news__top {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 422, ../sass/style.scss */
+.main_news__top .grey_button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 429, ../sass/style.scss */
+.main_news__item {
+  width: 48%;
+}
+
+/* line 432, ../sass/style.scss */
+.main_news__item figure {
+  height: 310px;
+}
+
+/* line 435, ../sass/style.scss */
+figure.effect-julia {
+  background: #2f3238;
+}
+
+/* line 438, ../sass/style.scss */
+figure.effect-julia img {
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 444, ../sass/style.scss */
+figure.effect-julia figcaption {
+  text-align: left;
+  width: auto;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 36px;
+}
+/* line 451, ../sass/style.scss */
+figure.effect-julia figcaption:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #cbcfd5;
+  top: 0;
+  left: 26px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/* line 464, ../sass/style.scss */
+figure.effect-julia p {
+  display: block;
+  margin-left: 12px;
+  color: #cbcfd5;
+  text-transform: none;
+  font-size: 14px;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.6s;
+  transition: opacity 0.35s, transform 0.6s;
+  -webkit-transform: translate3d(-360px, 0, 0);
+  transform: translate3d(-360px, 0, 0);
+}
+
+/* line 476, ../sass/style.scss */
+figure.effect-julia p:first-child {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+/* line 480, ../sass/style.scss */
+figure.effect-julia p:nth-of-type(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 485, ../sass/style.scss */
+figure.effect-julia p:nth-of-type(3) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+/* line 489, ../sass/style.scss */
+figure.effect-julia:hover p:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+/* line 493, ../sass/style.scss */
+figure.effect-julia:hover p:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+/* line 497, ../sass/style.scss */
+figure.effect-julia:hover p:nth-of-type(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 501, ../sass/style.scss */
+figure.effect-julia:hover p:nth-of-type(4) {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+/* line 505, ../sass/style.scss */
+figure.effect-julia:hover p:nth-of-type(5) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+/* line 509, ../sass/style.scss */
+figure.effect-julia:hover img {
+  opacity: 0.4;
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+/* line 514, ../sass/style.scss */
+figure.effect-julia:hover figcaption:before {
+  opacity: 1;
+}
+
+/* line 517, ../sass/style.scss */
+figure.effect-julia:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
