@@ -26,17 +26,6 @@ $(window).load(function() {
     wow.init();
 });
 
-
-// $(document).ready(function(){
-// 	if (window.innerWidth < 768 ){
-// 		$('.one_inner').bxSlider({
-// 			auto: true,
-// 		  // mode: 'fade',
-// 		  pager: true,
-// 		})
-// 	}
-// })
-
 // slider for main page header
 var bxConfig = {
   auto: true,
@@ -58,6 +47,60 @@ var bxConfig = {
   }
 };
 var bxSlider = $('.main_one__gallery').bxSlider(bxConfig);
+$('.main_one__slide_right').click(function() {
+  bxSlider.goToNextSlide();
+});
+$('.main_one__slide_left').click(function() {
+  bxSlider.goToPrevSlide();
+});
+
+/// zipped menu
+var h = $(window).height();
+$(window).scroll(function(){
+	 windowTop = $(window).scrollTop();
+    var topPosElem = $('.navigation').offset().top - windowTop;
+   // console.log(topPosElem);
+	 if (windowTop > 160){
+		 $("body").addClass("scrolled")
+	 }
+	 if (windowTop < 160){
+		 $("body").removeClass("scrolled")
+	 	}
+   });
+
+
+/////
+
+
+/**
+ * jQuery Spincrement plugin
+  */
+(function($){ $.extend($.easing,{ spincrementEasing:function(x,t,b,c,d){ return(t==d)?b+c:c*(-Math.pow(2,-10*t/d)+1)+b; } }); $.fn.spincrement=function(opts){ var defaults={ from:0, to:false, decimalPlaces:0, decimalPoint:'.', thousandSeparator:',', duration:2000,leeway:50,easing:'spincrementEasing', fade:true }; var options=$.extend(defaults,opts); var re_thouSep=new RegExp(/^(-?[0-9]+)([0-9]{3})/); function format(num){ num=num.toFixed(options.decimalPlaces);if((options.decimalPlaces>0)&&(options.decimalPoint!='.')){ num=num.replace('.',options.decimalPoint); } if(options.thousandSeparator){ while(re_thouSep.test(num)){ num=num.replace(re_thouSep,'$1'+options.thousandSeparator+'$2'); } } return num; } return this.each(function(){ var obj=$(this); var from=options.from; var to=(options.to!=false)?options.to:parseFloat(obj.html());var duration=options.duration; if(options.leeway){ duration+=Math.round(options.duration*(((Math.random()*2)-1)*(options.leeway)/100)); } obj.css('counter',from); if(options.fade)obj.css('opacity',0); obj.animate( {counter:to,opacity:1}, { easing:options.easing, duration:duration, step:function(progress){ obj.css('visibility','visible');obj.html(format(progress*to)); }, complete:function(){ obj.css('counter',null); obj.html(format(to)); } } ); }); }; })(jQuery);
+// бегущие цифры инициализация
+
+$(document).ready(function(){
+    var show = true;
+	  var countbox = "#spinBox";
+	$(window).on("scroll load resize", function(){
+		if(!show) return false;                   // Отменяем показ анимации, если она уже была выполнена
+		var windowTop = $(window).scrollTop() - 100 ;        // Количество пикселей на которое была прокручена страница
+		var elTop = $(countbox).offset().top;
+		var h = $(window).height();
+
+    if ( (elTop - h) <= windowTop){
+			$(".spincrement").spincrement({
+        from: 0,
+				thousandSeparator: " ",
+				duration: 2200,
+        easing: 'spincrementEasing',
+        fade: true
+			});
+			show = false;
+		}
+	});
+});
+/////
+
 
 
 ////open modal_window
@@ -126,30 +169,26 @@ $(window).scroll(function(){
 
   windowTop = $(window).scrollTop() - 100;
 
+  // $('.main_progress__box').each(function(){
+  //   var show = true;
+  //   if(!show) return false;
+  //
+  //   elTop =  $(this).offset().top;
+  //   if ( (elTop - h) <= windowTop) {
+  //     $(".spincrement").spincrement({
+  //           thousandSeparator: "",
+  //           duration: 1000
+  //        });
+  //         show = false;
+  //   }
+  // });
+
+
       $(".line_left, .line_right").each(function(){
           elTop = $(this).offset().top;
             if ( (elTop - h) <= windowTop) {
                 $(this).addClass("line__active");
             }
-            // if ( (elTop - h) > windowTop) {
-            //   if ( $(this).hasClass("block_img_active") ) {
-            //     $(this).removeClass("block_img_active");
-            //   }
-            // }
-        });
-
-        $('.one_img_box').each(function(){
-          elTop = $(this).offset().top;
-          if ( (elTop - h) <= windowTop) {
-              $(this).addClass("border__active");
-          }
-
-        });
-        $('.fig_anime').each(function(){
-          elTop = $(this).offset().top;
-          if ( (elTop - h) <= windowTop) {
-              $(this).addClass("fig_anime__active");
-          }
 
         });
         $('.round_svg').each(function(){
