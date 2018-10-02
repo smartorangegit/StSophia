@@ -1,7 +1,5 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* Welcome
+StSophia (v.2) (c) Begas Anna 2018  */
 
 @import "compass/reset";
 @import "_variables";
@@ -25,6 +23,11 @@ input{
   background: none;
   color: $grey;
 }
+sup{
+  position: relative;
+  font-size: 60%;
+  top: -2px;
+}
 ::-webkit-input-placeholder { color: $grey; letter-spacing: 0.05em;}
 ::-moz-placeholder { color: $grey; letter-spacing: 0.05em;}
 :-ms-input-placeholder { color: $grey; letter-spacing: 0.05em;}
@@ -35,6 +38,9 @@ font-family: "CenturyGothic";
 background-color: #ffffff;
 letter-spacing: 0.05em;
 line-height: 1.6;
+}
+.bold{
+  font-family: "CenturyGothicBold";
 }
 .hidden__box{
   height: 0px;
@@ -149,7 +155,9 @@ line-height: 1.6;
 //   margin-left: 10px;
 //   height: 12px;
 // }
+.navigation__outer{}
 .navigation{
+  display: block;
   background: $darkGrey;
   text-align: center;
   padding: 34px 0;
@@ -161,11 +169,13 @@ line-height: 1.6;
   }
   .header_fixed__logo{
     opacity: 0;
+    pointer-events: none;
     transition: 0.5s;
     -webkit-transition: .5s;
   }
   .header_fixed_lang{
     opacity: 0;
+    pointer-events: none;
     transition: 0.5s;
     -webkit-transition: .5s;
   }
@@ -182,8 +192,18 @@ line-height: 1.6;
   }
 }
 .menu_hover__outer{
-  height: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 0;
   overflow: hidden;
+  z-index: 56;
+  transition: 0.6s;
+  -webkit-transition: .6s;
+}
+.open{
+  max-height: 400px;
 }
 .menu_hover{
   background: $darkGrey;
@@ -209,9 +229,11 @@ line-height: 1.6;
     padding: 10px 0;
     .header_fixed__logo{
       opacity: 1;
+      pointer-events: all;
     }
     .header_fixed_lang{
       opacity: 1;
+      pointer-events: all;
     }
   }
   .navigation__box{
@@ -326,6 +348,11 @@ line-height: 1.6;
 }
 .main_banner{
   padding: 24px 0;
+}
+.main_banner_inner{
+  max-width: 1170px;
+  height: 170px;
+  margin: 20px auto;
 }
 // projects
 .main_project__box{
@@ -664,7 +691,7 @@ figure.effect-julia:hover p {
 .footer_logo{
   width: 100%;
   max-width: 200px;
-  max-height: 100px;
+  max-height: 46px;
 }
 .footer_contact_svg{
   max-width: 20px;
@@ -677,11 +704,24 @@ figure.effect-julia:hover p {
   border: 1px solid;
   padding: 4px;
   margin-right: 14px;
+  background-color: transparent;
+  transition: .3s;
+  -webkit-transition: .3s;
   svg{
     display: block;
     max-width: 100%;
     max-height: 100%;
+    fill: $middleGrey;
+    transition: .3s;
+    -webkit-transition: .3s;
   }
+}
+.footer_social__item:hover{
+  background-color: $middleGrey;
+  svg{
+    fill: $grey;
+  }
+
 }
 .footer__box{
   margin-bottom: 40px;
@@ -709,6 +749,7 @@ input{
 }
 input[type="submit"]{
   background: $middleGrey;
+  cursor: pointer;
 }
 .copyright{
   padding: 30px 0;
@@ -719,4 +760,110 @@ input[type="submit"]{
 .smartorange__logo{
   width: 68px;
   height: 20px;
+}
+
+///under-consrtuction
+.uc-body{
+  // padding-top: 286px;
+}
+.uc_nav .header_wrapper{
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.uc_nav{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-top: 286px;
+  background-color: #ffffff;
+  z-index: 55;
+  li{
+    text-transform: uppercase;
+  }
+}
+.uc-nav__fixed{
+  top: 0;
+  position: fixed;
+  margin-top: 0;
+  z-index: 55;
+  transition: 0.3s;
+  -webkit-transition: .3s;
+}
+.scrollspy{
+  height: 500px;
+}
+.uc_nav li{
+  position: relative;
+  padding: 24px 8px;
+  display: block;
+  white-space: nowrap;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 3px;
+    background-color: $grey;
+    transition: ease-in-out 0.4s;
+    -webkit-transition: ease-in-out 0.4s;
+  }
+}
+.uc_nav .spy__active{
+  color: #000000;
+  &:before{
+    width: 100%;
+  }
+}
+.uc_project{
+  margin-top: 356px;
+  height: 780px;
+  width: 100%;
+  background: url('/img/uc/cristal.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.uc_project__box{
+  background-color: rgba(255,255,255,.75);
+  height: 100%;
+  width: 50%;
+  max-width: 600px;
+  padding: 50px 10px;
+  text-align: center;
+  font-size: 14px;
+  .content_name{
+    margin: 0 auto;
+  }
+  img{
+    display: block;
+    margin: 26px auto;
+  }
+  table{
+    width: 100%;
+    color: $grey;
+    td{
+      width: 50%;
+      padding: 6px 8px;
+    }
+    td:nth-child(1){
+      text-align: right;
+    }
+    td:nth-child(2){
+      text-align: left;
+      line-height: 1.2;
+    }
+    .bold{
+      padding: 14px 0px;
+    }
+  }
+}
+.label_box{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: $cristalPark;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 16px;
 }

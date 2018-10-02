@@ -52,131 +52,7 @@
           </defs>
       </svg>
     </div>
-    <!-- end hidden box -->
-
-    <!-- <div class="header_fixed">
-      <div class="header_wrapper flex">
-        <div class="header_fixed__logo">
-          <svg fill="#ffffff"><use xlink:href="#StSophia"></use></svg>
-        </div>
-        <ul class="header_fixed__nav flex">
-          <li><a href="#">Объекты<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-          <li><a href="#">О компании<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-          <li><a href="#">Новости<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-          <li><a href="#">Контакты<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-        </ul>
-        <div class="header_fixed_lang">
-          <ul>
-            <li><a href="#">Рус <svg class="grey" width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-            <li><a href="#">Укр</a></li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
-    <div class="header_outer__before">
-      <!-- header before scroll -->
-      <div class="header">
-        <div class="header_wrapper flex">
-          <div class="aside flex">
-            <div class="header_lang">
-              <ul>
-                <li><a href="#">Рус <svg width="10" height="10" class="grey"><use xlink:href="#arrow_down"></use></svg></a></li>
-                <!-- <li><a href="#">Укр</a></li> -->
-              </ul>
-            </div>
-            <ul class="header_social">
-              <li><a href="#"><svg><use xlink:href="#instagram"></use></svg></a></li>
-              <li><a href="#"><svg><use xlink:href="#fb"></use></svg></a></li>
-            </ul>
-          </div>
-          <div class="header_center"><svg class="header__logo" fill="#ffffff"><use xlink:href="#StSophia"></use></svg></div>
-          <div class="aside_b">
-            <div class="header__callback flex">
-              <svg width="10" height="20" ><use xlink:href="#phone"></use></svg>
-              <span>Заказать звонок</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end header before scroll -->
-      <!-- navigation before scroll -->
-      <!-- <div class="navigation__outer">
-
-      </div> -->
-      <div class="navigation">
-        <div class="header_wrapper flex">
-          <div class="header_fixed__logo">
-            <svg fill="#ffffff"><use xlink:href="#StSophia"></use></svg>
-          </div>
-          <ul class="navigation__box">
-            <li><a class="nav_link" data-link="object" href="#">Объекты<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-            <li><a class="nav_link" data-link="about" href="#">О компании<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-            <li><a class="nav_link" data-link="news" href="#">Новости<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-            <li><a href=""  href="#">Контакты</a></li>
-          </ul>
-          <div class="header_fixed_lang">
-            <ul>
-              <li><a href="#">Рус <svg class="grey" width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-              <!-- <li><a href="#">Укр</a></li> -->
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- end navigation before scroll -->
-    <!-- второстепенное меню при ховере -->
-    <div class="menu_hover__outer">
-      <div class="menu_hover">
-        <div id="object" class="wrapper flex">
-          <a href="#" class="menu_hover__item">
-            <div class="menu_hover_img">
-              <img src="img/main/hover_menu/1.jpg" alt="">
-            </div>
-            <figcaption>
-              <div class="subname">Название</div>
-              <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
-            </figcaption>
-          </a>
-          <a href="#" class="menu_hover__item">
-            <div class="menu_hover_img">
-              <img src="img/main/hover_menu/2.jpg" alt="">
-            </div>
-            <figcaption>
-              <div class="subname">Название</div>
-              <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
-            </figcaption>
-          </a>
-          <a href="#" class="menu_hover__item">
-            <div class="menu_hover_img">
-              <img src="img/main/hover_menu/3.jpg" alt="">
-            </div>
-            <figcaption>
-              <div class="subname">Название</div>
-              <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
-            </figcaption>
-          </a>
-          <a href="#" class="menu_hover__item">
-            <div class="menu_hover_img">
-              <img src="img/main/hover_menu/4.jpg" alt="">
-            </div>
-            <figcaption>
-              <div class="subname">Название</div>
-              <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
-            </figcaption>
-          </a>
-          <a href="#" class="menu_hover__item">
-            <div class="menu_hover_img">
-              <img src="img/main/hover_menu/5.jpg" alt="">
-            </div>
-            <figcaption>
-              <div class="subname">Название</div>
-              <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
-            </figcaption>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- конец второстепенного меню при ховере -->
-  </div>
+  <?php include_once('includes/header.php') ?>
 
     <section class="main_one">
       <ul class="main_one__gallery">
@@ -204,15 +80,7 @@
       </div>
 
     </section>
-    <section class="main_banner">
-        <div class="main_banner_inner">
-          <div class="banner__slider">
-            <div class=""><img src="/img/main/banner.jpg" alt=""></div>
-            <div class=""><img src="/img/main/banner_1.jpg" alt=""></div>
-
-          </div>
-        </div>
-    </section>
+    <?php include_once('includes/banner.php') ?>
 
     <section class="main_project">
       <div class="content_name">Проекты</div>
@@ -474,58 +342,7 @@
       </div>
     </section>
 
-    <div class="footer">
-      <div class="wrapper">
-        <div class="footer__box flex">
-
-          <div class="footer__item">
-            <div class="footer_name">&nbsp;</div>
-            <svg class="footer_logo"><use xlink:href="#StSophia"></use></svg>
-          </div>
-          <div class="footer__item">
-            <div class="footer_name">Контакты</div>
-            <div class="flex">
-              <svg class="footer_contact_svg"><use xlink:href="#phone"></use></svg>
-              <span>+380 (044) 492 35 05</span>
-            </div>
-            <div class="flex">
-              <svg class="footer_contact_svg"><use xlink:href="#letter"></use></svg>
-              <span>sales@stsophia.ua</span>
-            </div>
-          </div>
-
-          <div class="footer__item">
-            <div class="footer_name">Офис</div>
-            <p>01015, Украина, г. Киев,</p>
-            <p>ул. Лаврская, 16 лит «В»</p>
-          </div>
-
-          <div class="footer__item">
-            <div class="footer_name">Follow us</div>
-            <div class="footer_social flex">
-              <a href="#" class="footer_social__item"><svg><use xlink:href="#instagram"></use></svg></a>
-              <a href="#" class="footer_social__item"><svg><use xlink:href="#fb"></use></svg></a>
-              <a href="#" class="footer_social__item"><svg><use xlink:href="#youtube"></use></svg></a>
-              <a href="#" class="footer_social__item"><svg><use xlink:href="#telegram"></use></svg></a>
-              <a href="#" class="footer_social__item"><svg><use xlink:href="#google1"></use></svg></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer_name">подписаться на рассылку новостей <svg class="footer_form_svg" style="width: 19px; height: 15px;"><use xlink:href="#letter"></use></svg> </div>
-        <form class="footer_subscribe flex" action="#" method="post">
-          <input type="email" name="" value="" placeholder="Ваш e-mail">
-          <input type="submit" name="" value="Подписаться">
-        </form>
-      </div>
-    </div>
-    <div class="copyright">
-      <div class="wrapper flex">
-        <span>© 2018 ST Sophia усі права захищено.</span>
-        <img class="smartorange__logo" src="/img/logos/smart_logo_w.svg" alt="SmartOrange">
-      </div>
-    </div>
-<script src="/js/script.js"></script>
+<?php include_once('includes/footer.php') ?>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDehzKltJ2hA0p9O2BWYkXG2Z4q7A-3TTM&sensor=false"></script>
 <script src="/js/map.js"></script>
   </body>
