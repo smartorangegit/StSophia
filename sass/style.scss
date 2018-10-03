@@ -3,7 +3,8 @@ StSophia (v.2) (c) Begas Anna 2018  */
 
 @import "compass/reset";
 @import "_variables";
-*{
+@import "_slick";
+*, *:after, *:before{
   box-sizing: border-box;
 }
 a{
@@ -27,6 +28,9 @@ sup{
   position: relative;
   font-size: 60%;
   top: -2px;
+}
+p{
+  margin: 12px 0;
 }
 ::-webkit-input-placeholder { color: $grey; letter-spacing: 0.05em;}
 ::-moz-placeholder { color: $grey; letter-spacing: 0.05em;}
@@ -656,15 +660,15 @@ figure.effect-julia:hover p {
   background: #ffffff;
   padding: 28px 24px;
   color: $grey;
-  .adv__name{
-    font-family: "CenturyGothicBold";
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
   .content_text{
     color: $grey;
   }
+}
+.adv__name{
+  font-family: "CenturyGothicBold";
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .footer{
   background: $grey;
@@ -765,6 +769,7 @@ input[type="submit"]{
 ///under-consrtuction
 .uc-body{
   // padding-top: 286px;
+  background: $lightGrey;
 }
 .uc_nav .header_wrapper{
   justify-content: center;
@@ -786,11 +791,11 @@ input[type="submit"]{
   position: fixed;
   margin-top: 0;
   z-index: 55;
-  transition: 0.3s;
-  -webkit-transition: .3s;
+  // transition: 0.1s;
+  // -webkit-transition: .1s;
 }
 .scrollspy{
-  height: 500px;
+  // height: 500px;
 }
 .uc_nav li{
   position: relative;
@@ -866,4 +871,144 @@ input[type="submit"]{
   text-transform: uppercase;
   color: #ffffff;
   padding: 16px;
+}
+.uc_complex{
+}
+.uc_gallery_box{
+  padding: 20px 0;
+  .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin-top: -23px;
+    width: 46px;
+    height: 46px;
+    background: $grey;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .slick_left{left: 6px;}
+  .slick_right{right: 6px;}
+}
+.uc_complex__logo{
+  width: 86px;
+}
+.uc_complex__descr{
+  column-count: 2;
+  -webkit-column-count: 2;
+  column-gap: 80px;
+  -webkit-column-gap: 80px;
+  p{
+    margin: 0 0 20px 0;
+  }
+}
+.uc_gallery__item{
+  width: 25%;
+  padding: 10px;
+  background-position: center;
+  background-size: cover;
+  height: 470px;
+  margin: 0 5px;
+}
+.uc_adv__gallery{
+  .slick-track{
+    display: flex;
+  }
+  .slick-slide {
+    margin: 0 10px;
+    height: auto;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+}
+.uc_gallery__item_1{background-image: url('/img/uc/CRYSTAL/gal_1.jpg');}
+.uc_gallery__item_2{background-image: url('/img/uc/CRYSTAL/gal_2.jpg');}
+.uc_gallery__item_3{background-image: url('/img/uc/CRYSTAL/gal_3.jpg');}
+.uc_gallery__item_4{background-image: url('/img/uc/CRYSTAL/gal_4.jpg');}
+.uc_gallery__item_5{background-image: url('/img/uc/CRYSTAL/gal_1.jpg');}
+.uc_gallery__item_6{background-image: url('/img/uc/CRYSTAL/gal_2.jpg');}
+
+.uc_advantages{
+  padding: 20px 0;
+}
+.uc_advantages__name{
+  align-items: center;
+  -webkit-align-items: center;
+}
+.adv__prev,
+.adv__next{
+  width: 46px;
+  height: 46px;
+  background: $grey;
+  padding: 12px;
+  display: inline-block;
+  cursor: pointer;
+}
+.uc_adv__item{
+  background: #fff;
+  padding: 30px 20px;
+  color: $grey;
+}
+
+.uc_technical{
+  background: #ffffff;
+  padding: 20px 0 50px;
+}
+.uc_tech__box{
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.uc_tech__item{
+  width: 23%;
+  position: relative;
+  background-color: $grey;
+  color: $middleGrey;
+  padding: 30px 20px;
+  text-align: left;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.46s;
+  -webkit-transition: 0.46s;
+  &:after{
+    content: attr(data-content);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $middleGrey;
+    padding: 0 20px 0px;
+    z-index: 1;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.46s;
+    -webkit-transition: 0.46s;
+    font-size: 14px;
+  }
+  svg{
+    fill: transparent;
+    stroke: $middleGrey;
+    width: 24px;
+    stroke-width: 18px;
+    height: 28px;
+    margin-right: 20px;
+    transition: 0.46s;
+    -webkit-transition: 0.46s;
+    }
+  }
+.uc_tech__item:hover{
+  background-color: $middleGrey;
+  color: $grey;
+  &:after{
+    max-height: 300px;
+    padding: 0 20px 14px;
+  }
+  svg{
+    stroke: $grey;
+  }
 }
