@@ -92,7 +92,7 @@ $(window).on("scroll load resize", function(){
 
 
 /////menu_hover__outer
-$('.nav_link').mouseover(function(e){
+$('.nav_link, .menu_hover__outer').mouseover(function(e){
   e.preventDefault();
     var hoverMenu = $('.menu_hover__outer');
     hoverMenu.addClass('open')
@@ -104,7 +104,7 @@ $('.nav_link').mouseover(function(e){
   // }
 
 });
-$('.nav_link').mouseout(function(e){
+$('.nav_link, .menu_hover__outer').mouseout(function(e){
   e.preventDefault();
     var hoverMenu = $('.menu_hover__outer');
     hoverMenu.removeClass('open')
