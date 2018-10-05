@@ -306,15 +306,280 @@
         <div class="bread bread_past"><a href="#">Выбор дома</a></div>
         <div class="bread bread_active"><a href="#">Выбор квартиры</a></div>
         <div class="bread"><a href="#">Планировка</a></div>
-
-
       </div>
-
+    </div>
+    <div class="uc_flats__selects flex">
+      <!-- select_house -->
+      <div class="uc_flats__item">
+        <div class="uc_flats_item__info flex">
+          <span class="bigger" id="numberHouse">2</span>
+          <span>дом <br>комплекса</span>
+        </div>
+        <div class="uc_flats_item__arrow">
+          <svg enable-background="new 0 0 129 129" height="136.08778" viewBox="0 0 82.099998 136.08778" width="82.099998" xmlns="http://www.w3.org/2000/svg"><path d="m11.2 124.9c-1.6-1.6-1.6-4.2 0-5.8l51.1-51-51.1-51.1c-1.6-1.6-1.6-4.2 0-5.8s4.2-1.6 5.8 0l53.9 53.9c.8.8 1.2 1.8 1.2 2.9 0 1-.4 2.1-1.2 2.9l-53.9 53.9c-1.6 1.7-4.2 1.7-5.8.1z"/></svg>
+        </div>
+        <div class="uc_flats_item__infobox">
+          <ul class="flex">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+          </ul>
+        </div>
+      </div>
+        <!-- end select_house -->
+        <!-- select_section -->
+      <div class="uc_flats__item">
+        <div class="uc_flats_item__info flex">
+          <span class="bigger" id="numberSection">1</span>
+          <span>Секция <br>комплекса</span>
+        </div>
+        <div class="uc_flats_item__arrow">
+          <svg enable-background="new 0 0 129 129" height="136.08778" viewBox="0 0 82.099998 136.08778" width="82.099998" xmlns="http://www.w3.org/2000/svg"><path d="m11.2 124.9c-1.6-1.6-1.6-4.2 0-5.8l51.1-51-51.1-51.1c-1.6-1.6-1.6-4.2 0-5.8s4.2-1.6 5.8 0l53.9 53.9c.8.8 1.2 1.8 1.2 2.9 0 1-.4 2.1-1.2 2.9l-53.9 53.9c-1.6 1.7-4.2 1.7-5.8.1z"/></svg>
+        </div>
+        <div class="uc_flats_item__infobox">
+          <ul class="flex">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- end select_section -->
+      <!-- select_floor -->
+      <div class="uc_flats__item">
+        <div class="uc_flats_item__info flex">
+          <span class="bigger" id="numberFloor">4</span>
+          <span>Этаж <br>комплекса</span>
+        </div>
+        <div class="uc_flats_item__arrow">
+          <svg enable-background="new 0 0 129 129" height="136.08778" viewBox="0 0 82.099998 136.08778" width="82.099998" xmlns="http://www.w3.org/2000/svg"><path d="m11.2 124.9c-1.6-1.6-1.6-4.2 0-5.8l51.1-51-51.1-51.1c-1.6-1.6-1.6-4.2 0-5.8s4.2-1.6 5.8 0l53.9 53.9c.8.8 1.2 1.8 1.2 2.9 0 1-.4 2.1-1.2 2.9l-53.9 53.9c-1.6 1.7-4.2 1.7-5.8.1z"/></svg>
+        </div>
+        <div class="uc_flats_item__infobox">
+          <ul class="flex">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+          </ul>
+        </div>
+      </div>
+              <!-- end select_floor -->
+      <a class="grey_button" href="#">Смотреть генплан</a>
+    </div>
+    <div class="uc_flats__main flex">
+      <div class="uc_flats__compass">
+        <img src="/img/Compass.svg" alt="compas" width="110" height="110">
+      </div>
+      <div class="uc_flats__img">
+        <img src="/img/plans/plan.png" alt="">
+      </div>
     </div>
   </div>
-
 </section>
-<section class="scrollspy" id="uc_filter">
+
+<section class="uc_filter scrollspy" id="uc_filter">
+  <div class="wrapper">
+    <div class="uc_filter__top flex">
+      <div class="content_name">Подбор по параметрам</div>
+      <div class="grey_button">Сбросить</div>
+    </div>
+    <div class="range_inner flex">
+      <div class="range__item flex">
+        <div class="filter_name">Общая площадь, м <sup>2</sup></div>
+        <div class="range_input">
+          <input type="text" class="range-init" id="squareRange" value="37/97">
+        </div>
+      </div>
+      <div class="range__item flex">
+        <div class="filter_name">Этаж</div>
+        <div class="range_input">
+          <input type="text" class="range-init" id="floorRange" value="2/25">
+        </div>
+      </div>
+      <div class="range__item flex">
+        <div class="filter_name">Количество комнат</div>
+        <div class="range_input">
+          <input type="text" class="range-init" id="kimnatRange" value="1/3">
+        </div>
+      </div>
+      <div class="range__item flex">
+        <div class="filter_name">Общая стоимость, грн</div>
+        <div class="range_input">
+          <input type="text" class="range-init" id="priceRange" value="770000/2000000">
+        </div>
+      </div>
+    </div>
+    <div class="uc_filter__results">
+      <div class="filter__message">
+        По вашему запросу доступно <span id="resultsNum">28</span> квартир
+      </div>
+      <div class="uc_filter__results_box flex">
+        <div class="filter_results__item">
+          <a href="" class="filter_results__item__inner">
+            <div class="filter_results__img">
+              <img src="/img/plans/plan_flat.png" alt="Планировка квартирЫ">
+            </div>
+            <div class="filter_results__info">
+              <table class="filter_results__table">
+                <tr>  <td>Дом</td><td>2</td></tr>
+                <tr>  <td>Секция</td><td>1</td></tr>
+                <tr>  <td>Этаж</td><td>4</td></tr>
+                <tr>  <td>Комнат</td><td>3</td></tr>
+                <tr>  <td>Площадь, м<sup>2</sup></td><td>94.6</td></tr>
+                <tr>  <td>Тип</td><td>2А</td></tr>
+              </table>
+            </div>
+          </a>
+        </div>
+        <div class="filter_results__item">
+          <a href="" class="filter_results__item__inner">
+            <div class="filter_results__img">
+              <img src="/img/plans/plan_flat.png" alt="Планировка квартирЫ">
+            </div>
+            <div class="filter_results__info">
+              <table class="filter_results__table">
+                <tr>  <td>Дом</td><td>2</td></tr>
+                <tr>  <td>Секция</td><td>1</td></tr>
+                <tr>  <td>Этаж</td><td>4</td></tr>
+                <tr>  <td>Комнат</td><td>3</td></tr>
+                <tr>  <td>Площадь, м<sup>2</sup></td><td>94.6</td></tr>
+                <tr>  <td>Тип</td><td>2А</td></tr>
+              </table>
+            </div>
+          </a>
+        </div>
+        <div class="filter_results__item">
+          <a href="" class="filter_results__item__inner">
+            <div class="filter_results__img">
+              <img src="/img/plans/plan_flat.png" alt="Планировка квартирЫ">
+            </div>
+            <div class="filter_results__info">
+              <table class="filter_results__table">
+                <tr>  <td>Дом</td><td>2</td></tr>
+                <tr>  <td>Секция</td><td>1</td></tr>
+                <tr>  <td>Этаж</td><td>4</td></tr>
+                <tr>  <td>Комнат</td><td>3</td></tr>
+                <tr>  <td>Площадь, м<sup>2</sup></td><td>94.6</td></tr>
+                <tr>  <td>Тип</td><td>2А</td></tr>
+              </table>
+            </div>
+          </a>
+        </div>
+        <div class="filter_results__item">
+          <a href="" class="filter_results__item__inner">
+            <div class="filter_results__img">
+              <img src="/img/plans/plan_flat.png" alt="Планировка квартирЫ">
+            </div>
+            <div class="filter_results__info">
+              <table class="filter_results__table">
+                <tr>  <td>Дом</td><td>2</td></tr>
+                <tr>  <td>Секция</td><td>1</td></tr>
+                <tr>  <td>Этаж</td><td>4</td></tr>
+                <tr>  <td>Комнат</td><td>3</td></tr>
+                <tr>  <td>Площадь, м<sup>2</sup></td><td>94.6</td></tr>
+                <tr>  <td>Тип</td><td>2А</td></tr>
+              </table>
+            </div>
+          </a>
+        </div>
+        <div class="filter_results__item">
+          <a href="" class="filter_results__item__inner">
+            <div class="filter_results__img">
+              <img src="/img/plans/plan_flat.png" alt="Планировка квартирЫ">
+            </div>
+            <div class="filter_results__info">
+              <table class="filter_results__table">
+                <tr>  <td>Дом</td><td>2</td></tr>
+                <tr>  <td>Секция</td><td>1</td></tr>
+                <tr>  <td>Этаж</td><td>4</td></tr>
+                <tr>  <td>Комнат</td><td>3</td></tr>
+                <tr>  <td>Площадь, м<sup>2</sup></td><td>94.6</td></tr>
+                <tr>  <td>Тип</td><td>2А</td></tr>
+              </table>
+            </div>
+          </a>
+        </div>
+        <div class="filter_results__item">
+          <a href="" class="filter_results__item__inner">
+            <div class="filter_results__img">
+              <img src="/img/plans/plan_flat.png" alt="Планировка квартирЫ">
+            </div>
+            <div class="filter_results__info">
+              <table class="filter_results__table">
+                <tr>  <td>Дом</td><td>2</td></tr>
+                <tr>  <td>Секция</td><td>1</td></tr>
+                <tr>  <td>Этаж</td><td>4</td></tr>
+                <tr>  <td>Комнат</td><td>3</td></tr>
+                <tr>  <td>Площадь, м<sup>2</sup></td><td>94.6</td></tr>
+                <tr>  <td>Тип</td><td>2А</td></tr>
+              </table>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="filter__few">
+        <div class="grey_button" id="see_more">Показать еще</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="uc_bulding_gallery">
+  <div class="wrapper">
+    <div class="content_name">Ход строительства</div>
+    <div class="uc_bulding_gallery__inner">
+      <div class="uc_bulding_gallery__box">
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__1">
+          <img src="/img/building/1.jpg" alt="">
+          <div class="uc_building__caption">
+            Дом 2
+          </div>
+        </div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__2"><img src="/img/building/2.jpg" alt="">
+        </div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__3"><img src="/img/building/3.jpg" alt="">
+        </div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__4"><img src="/img/building/4.jpg" alt=""></div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__5"><img src="/img/building/1.jpg" alt=""></div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__6"><img src="/img/building/2.jpg" alt=""></div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__7"><img src="/img/building/3.jpg" alt=""></div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__8"><img src="/img/building/4.jpg" alt=""></div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__9"><img src="/img/building/1.jpg" alt=""></div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__10"><img src="/img/building/2.jpg" alt=""></div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__11"><img src="/img/building/3.jpg" alt=""></div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__12"><img src="/img/building/4.jpg" alt=""></div>
+      </div>
+      <div class="build__prev"><svg enable-background="new 0 0 792 792" height="100%" viewBox="0 0 792 792" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#ffffff" transform="matrix(-1 0 0 1 792 0)"></path></svg></div>
+      <div class="build__next"><svg enable-background="new 0 0 792 792" height="100%" viewBox="0 0 792 792" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#ffffff"></path></svg></div>
+
+      <ul class="uc_bulding_gallery__nav">
+        <li>январь</li>
+        <li>февраль</li>
+        <li>март</li>
+        <li>апрель</li>
+        <li>май</li>
+        <li>июнь</li>
+        <li>июль</li>
+        <li>август</li>
+        <li>сентябрь</li>
+        <li>октябрь</li>
+        <li>ноябрь</li>
+        <li>декабрь</li>
+      </ul>
+      <div class="build_nav__prev"><svg enable-background="new 0 0 792 792" height="100%" viewBox="0 0 792 792" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#ffffff" transform="matrix(-1 0 0 1 792 0)"></path></svg></div>
+      <div class="build_nav__next"><svg enable-background="new 0 0 792 792" height="100%" viewBox="0 0 792 792" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#ffffff"></path></svg></div>
+
+  </div>
+
+  </div>
 
 </section>
 
@@ -387,5 +652,7 @@
 <?php include_once('includes/footer.php') ?>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDehzKltJ2hA0p9O2BWYkXG2Z4q7A-3TTM&sensor=false"></script>
 <script src="/js/mapCrystal.js"></script>
+<script src="/js/ion.rangeSlider.js"></script>
+<script src="/js/range.js"></script>
   </body>
 </html>

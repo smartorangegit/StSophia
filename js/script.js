@@ -96,12 +96,6 @@ $('.nav_link, .menu_hover__outer').mouseover(function(e){
   e.preventDefault();
     var hoverMenu = $('.menu_hover__outer');
     hoverMenu.addClass('open')
-  // if( hoverMenu.hasClass('open')){
-  //   hoverMenu.removeClass('open')
-  // }
-  // else {
-  //
-  // }
 
 });
 $('.nav_link, .menu_hover__outer').mouseout(function(e){
@@ -237,6 +231,80 @@ $('.adv__prev').click(function(){
 $('.adv__next').click(function(){
   $('.uc_adv__gallery').slick('slickNext');
 });
+
+
+///uc_flats__selects
+
+  $('.uc_flats_item__arrow').click(function(){
+    if ($(this).hasClass('arrow_opened')){
+      $(this).removeClass('arrow_opened')
+      $(this).parent().find('.uc_flats_item__infobox').fadeOut()
+      $(this).find('svg').css('transform','none')
+    }
+    else {
+      $(this).addClass('arrow_opened')
+      $(this).parent().find('.uc_flats_item__infobox').fadeIn()
+      $(this).find('svg').css('transform','rotate(-90deg)')
+  }
+  });
+
+  //////
+  $('.uc_bulding_gallery__box').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  lazyLoad: 'ondemand',
+  asNavFor: '.uc_bulding_gallery__nav'
+});
+$('.build__prev').click(function(){
+  $('.uc_bulding_gallery__box').slick('slickPrev');
+});
+$('.build__next').click(function(){
+  $('.uc_bulding_gallery__box').slick('slickNext');
+});
+
+$('.uc_bulding_gallery__nav').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  asNavFor: '.uc_bulding_gallery__box',
+  dots: false,
+  arrows: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+
+$('.build_nav__prev').click(function(){
+  $('.uc_bulding_gallery__nav').slick('slickPrev');
+});
+$('.build_nav__next').click(function(){
+  $('.uc_bulding_gallery__nav').slick('slickNext');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ////open modal_window
