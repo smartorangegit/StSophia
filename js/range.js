@@ -50,7 +50,7 @@ function updateInputs (data) {
 		}
 
 		}
-		 if (n==data.length) {     $('.not_found').css("display", "block");    }
+		 if (n==data.length) { $('.not_found').css("display", "block");    }
 		 else { $('.not_found').css("display", "none");}
 
 				}

@@ -1,3 +1,4 @@
+<div class="overlay"></div>
 <div class="footer">
   <div class="wrapper">
     <div class="footer__box flex">
@@ -8,14 +9,14 @@
       </div>
       <div class="footer__item">
         <div class="footer_name">Контакты</div>
-        <div class="flex">
+        <p class="flex">
           <svg class="footer_contact_svg"><use xlink:href="#phone"></use></svg>
           <span>+380 (044) 492 35 05</span>
-        </div>
-        <div class="flex">
+        </p>
+        <p class="flex">
           <svg class="footer_contact_svg"><use xlink:href="#letter"></use></svg>
           <span>sales@stsophia.ua</span>
-        </div>
+        </p>
       </div>
 
       <div class="footer__item">
@@ -30,7 +31,7 @@
           <a href="#" class="footer_social__item"><svg><use xlink:href="#instagram"></use></svg></a>
           <a href="#" class="footer_social__item"><svg><use xlink:href="#fb"></use></svg></a>
           <a href="#" class="footer_social__item"><svg><use xlink:href="#youtube"></use></svg></a>
-          <a href="#" class="footer_social__item"><svg><use xlink:href="#telegram"></use></svg></a>
+          <a href="#" class="footer_social__item"><svg style="margin-left: -1px"><use xlink:href="#telegram"></use></svg></a>
           <a href="#" class="footer_social__item"><svg><use xlink:href="#google1"></use></svg></a>
         </div>
       </div>

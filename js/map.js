@@ -2,10 +2,6 @@ function mapMaker(id, longt, lat) {
 	var id = id;
 	flag_item = 1;
 	var
-		// contentString1 = '<div class="map__info-marker">' +
-		// '<h3 style="font-size: 30px;text-align: center;">Happy House</h3>' +
-		// '<p>Київ, вул.Предславинська, 35 </p>' +
-		// '</div>',
 		contentString2 = '<div class="map__info-marker">RRYC</div>',
 		contentString3 = '<div class="map__info-marker">Riviera</div>', //ул. Раисы Окипной, 18,
 		contentString4 = '<div class="map__info-marker">Hilton</div>',

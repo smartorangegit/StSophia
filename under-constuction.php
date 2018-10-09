@@ -2,7 +2,7 @@
 <html lang="uk" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>StSophia Homes</title>
+    <title>Строящиеся объекты | StSophia Homes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
@@ -424,7 +424,7 @@
       </div>
       <div class="uc_filter__results_box flex">
         <div class="filter_results__item">
-          <a href="" class="filter_results__item__inner">
+          <div class="filter_results__item__inner">
             <div class="filter_results__img">
               <img src="/img/plans/plan_flat.png" alt="Планировка квартирЫ">
             </div>
@@ -438,10 +438,10 @@
                 <tr>  <td>Тип</td><td>2А</td></tr>
               </table>
             </div>
-          </a>
+          </div>
         </div>
         <div class="filter_results__item">
-          <a href="" class="filter_results__item__inner">
+          <div  class="filter_results__item__inner">
             <div class="filter_results__img">
               <img src="/img/plans/plan_flat.png" alt="Планировка квартирЫ">
             </div>
@@ -455,10 +455,10 @@
                 <tr>  <td>Тип</td><td>2А</td></tr>
               </table>
             </div>
-          </a>
+          </div>
         </div>
         <div class="filter_results__item">
-          <a href="" class="filter_results__item__inner">
+          <div class="filter_results__item__inner">
             <div class="filter_results__img">
               <img src="/img/plans/plan_flat.png" alt="Планировка квартирЫ">
             </div>
@@ -472,10 +472,10 @@
                 <tr>  <td>Тип</td><td>2А</td></tr>
               </table>
             </div>
-          </a>
+          </div>
         </div>
         <div class="filter_results__item">
-          <a href="" class="filter_results__item__inner">
+          <div class="filter_results__item__inner">
             <div class="filter_results__img">
               <img src="/img/plans/plan_flat.png" alt="Планировка квартирЫ">
             </div>
@@ -489,10 +489,10 @@
                 <tr>  <td>Тип</td><td>2А</td></tr>
               </table>
             </div>
-          </a>
+          </div>
         </div>
         <div class="filter_results__item">
-          <a href="" class="filter_results__item__inner">
+          <div class="filter_results__item__inner">
             <div class="filter_results__img">
               <img src="/img/plans/plan_flat.png" alt="Планировка квартирЫ">
             </div>
@@ -506,10 +506,10 @@
                 <tr>  <td>Тип</td><td>2А</td></tr>
               </table>
             </div>
-          </a>
+          </div>
         </div>
         <div class="filter_results__item">
-          <a href="" class="filter_results__item__inner">
+          <div class="filter_results__item__inner">
             <div class="filter_results__img">
               <img src="/img/plans/plan_flat.png" alt="Планировка квартирЫ">
             </div>
@@ -523,8 +523,41 @@
                 <tr>  <td>Тип</td><td>2А</td></tr>
               </table>
             </div>
-          </a>
+          </div>
         </div>
+<!-- инфобокс попап с планировкой -->
+<div class="popup_flatplan">
+  <div class="popup_top flex">
+    <div class="content_name">план помещения</div>
+    <div class="popup_flatplan__close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#565c64"></path><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#565c64"></path></svg>
+    </div>
+  </div>
+  <div class="popup__content flex">
+    <div class="popup_img">
+      <img src="/img/plans/plan_flat.png" alt="План помещения">
+    </div>
+    <div class="popup_info">
+      <table class="filter_results__table">
+        <tr>  <td>Площадь</td>             <td class="bold">М<sup>2</sup></td></tr>
+        <tr>  <td>Кухня</td>               <td>12,3</td></tr>
+        <tr>  <td>Спальня</td>             <td>16,8</td></tr>
+        <tr>  <td>Прихожая</td>            <td>4,6</td></tr>
+        <tr>  <td>Гостинная<sup>2</sup></td><td>22,4</td></tr>
+        <tr>  <td>Санузел</td>             <td>2,4</td></tr>
+      </table>
+    </div>
+
+  </div>
+  <div class="popup_bottom flex">
+    <div class="grey_button">Добавить в избранное</div>
+    <div class="grey_button">Заявка на бронирование</div>
+    <a class="grey_button" href="#">Скачать PDF квартиры</a>
+
+  </div>
+
+</div>
+
       </div>
       <div class="filter__few">
         <div class="grey_button" id="see_more">Показать еще</div>
@@ -539,14 +572,10 @@
       <div class="uc_bulding_gallery__box">
         <div class="uc_bulding_gallery__item uc_bulding_gallery__item__1">
           <img src="/img/building/1.jpg" alt="">
-          <div class="uc_building__caption">
-            Дом 2
-          </div>
+          <div class="uc_building__caption"> Сентябрь <span class="bold">2-й дом </span> </div>
         </div>
-        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__2"><img src="/img/building/2.jpg" alt="">
-        </div>
-        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__3"><img src="/img/building/3.jpg" alt="">
-        </div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__2"><img src="/img/building/2.jpg" alt=""></div>
+        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__3"><img src="/img/building/3.jpg" alt=""></div>
         <div class="uc_bulding_gallery__item uc_bulding_gallery__item__4"><img src="/img/building/4.jpg" alt=""></div>
         <div class="uc_bulding_gallery__item uc_bulding_gallery__item__5"><img src="/img/building/1.jpg" alt=""></div>
         <div class="uc_bulding_gallery__item uc_bulding_gallery__item__6"><img src="/img/building/2.jpg" alt=""></div>
@@ -559,7 +588,6 @@
       </div>
       <div class="build__prev"><svg enable-background="new 0 0 792 792" height="100%" viewBox="0 0 792 792" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#ffffff" transform="matrix(-1 0 0 1 792 0)"></path></svg></div>
       <div class="build__next"><svg enable-background="new 0 0 792 792" height="100%" viewBox="0 0 792 792" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#ffffff"></path></svg></div>
-
       <ul class="uc_bulding_gallery__nav">
         <li>январь</li>
         <li>февраль</li>
@@ -576,82 +604,140 @@
       </ul>
       <div class="build_nav__prev"><svg enable-background="new 0 0 792 792" height="100%" viewBox="0 0 792 792" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#ffffff" transform="matrix(-1 0 0 1 792 0)"></path></svg></div>
       <div class="build_nav__next"><svg enable-background="new 0 0 792 792" height="100%" viewBox="0 0 792 792" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#ffffff"></path></svg></div>
-
+    </div>
   </div>
+</section>
+<section class="uc_progress">
+  <div class="wrapper flex">
+    <div class="uc__progress_bar">
+      <div class="content_name">Динамика <br>строительства </div>
+      <div class="uc_progress_box">
+        <div class="uc_progress__item">
+          <svg class="progress_status" id="progress1" data-p="100"></svg>
+          <p>общие строительные работы</p>
+        </div>
+        <div class="uc_progress__item">
+          <svg class="uc_progress_status" id="progress2" data-p="5"></svg>
+          <p>фасад</p>
+        </div>
+        <div class="uc_progress__item">
+          <svg class="uc_progress_status" id="progress3" data-p="8"></svg>
+          <p>коммуникации</p>
+        </div>
+        <div class="uc_progress__item">
+          <svg class="uc_progress_status" id="progress4" data-p="5"></svg>
+          <p>благоустройство</p>
+        </div>
+      </div>
+    </div>
+    <div class="uc__webcam">
+      <div class="content_name">Камера <br>строительства</div>
+      <div class="uc__webcam_box">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/KzUjrLKblEg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="uc_sales">
+  <div class="uc_sales__inner" id="uc_sales__inner"></div>
+  <div class="light_box">
+    <div class="content_name">Отдел продаж</div>
+    <form class="form_sales" action="#" method="post">
+      <div class="input_outer">
+        <input type="name" name="" placeholder="Имя, фамилия" value="">
+      </div>
+      <div class="input_outer">
+        <input type="email" name="" placeholder="E-mail" value="">
+      </div>
+      <div class="input_outer">
+        <input type="tel" name="" placeholder="Телефон" value="">
+      </div>
+      <div class="input_outer">
+        <input type="text" name="" placeholder="Сообщение" value="">
+      </div>
+      <div class="">
+        <!-- капча -->
+      </div>
+      <div class="checkbox__outer flex">
+        <input class="checkbox" type="checkbox" id="agree" name="feature" value="scales" checked />
+        <label for="agree">Получать уведомления про акции и новости ST Sophia Homes</label>
+      </div>
+      <input type="submit" name="" value="Отправить сообщение">
+    </form>
+  </div>
+  <div class="kredit_box">
+    <a class="grey_button" href="#">Кредитный калькулятор</a>
+    <div class="close_kredit" id="close_kredit">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#565c64"></path><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#565c64"></path></svg>
+
+    </div>
 
   </div>
 
 </section>
-
-
-
-
-
-
-    <section class="main_news">
-      <div class="wrapper">
-        <div class="main_news__top">
-          <div class="content_name">
-            новости этого проекта
-          </div>
-          <a class="grey_button" href="/news">Cмотреть все новости</a>
+<section class="main_news">
+    <div class="wrapper">
+      <div class="main_news__top">
+        <div class="content_name">
+          новости этого проекта
         </div>
-        <div class="main_news__box flex">
-          <div class="main_news__item">
-            <figure class="effect-julia">
-              <img src="/img/main/project_2.jpg" alt=""/>
-              <figcaption>
-                <div class="main_news_prev">
-                  <p>По ввоей сути рыба-текст является</p>
-                  <p>фльтернативой современному</p>
-                  <p>lorem ipsum, который вызывает у </p>
-                  <p>некторых людей недоумение при </p>
-                  <p>попытках прочитать рыбу текст. </p>
-                </div>
-                <a href="#"></a>
-              </figcaption>
-            </figure>
-            <div class="main_news__prev">
-              <p class="subname">Большие скидки на квартиры в Ambassador house</p>
-              <div class="main_news__date">
-                <svg class="calendar"><use xlink:href="#calendar"></use></svg>
-                <span>30.09.2018</span><span>|</span><span>14:15</span>
-              </div>
-            </div>
-          </div>
-          <div class="main_news__item">
-            <figure class="effect-julia">
-              <img src="/img/main/project_3.jpg" alt=""/>
-              <figcaption>
-                <div class="main_news_prev">
-                  <p>По ввоей сути рыба-текст является</p>
-                  <p>фльтернативой современному</p>
-                  <p>lorem ipsum, который вызывает у </p>
-                  <p>некторых людей недоумение при </p>
-                  <p>попытках прочитать рыбу текст. </p>
-                </div>
-                <a href="#"></a>
-              </figcaption>
-            </figure>
-            <div class="main_news__prev">
-              <p class="subname">Большие скидки в Ambassador house</p>
-              <div class="main_news__date">
-                <svg class="calendar"><use xlink:href="#calendar"></use></svg>
-                <span>30.09.2018</span><span>|</span><span>14:15</span>
-              </div>
-            </div>
-          </div>
-          <!-- end .main_news__item -->
-        </div>
-        <!-- end main_news__box -->
+        <a class="grey_button" href="/news">Cмотреть все новости</a>
       </div>
-    </section>
-
+      <div class="main_news__box flex">
+        <div class="main_news__item">
+          <figure class="effect-julia">
+            <img src="/img/main/project_2.jpg" alt=""/>
+            <figcaption>
+              <div class="main_news_prev">
+                <p>По ввоей сути рыба-текст является</p>
+                <p>фльтернативой современному</p>
+                <p>lorem ipsum, который вызывает у </p>
+                <p>некторых людей недоумение при </p>
+                <p>попытках прочитать рыбу текст. </p>
+              </div>
+              <a href="#"></a>
+            </figcaption>
+          </figure>
+          <div class="main_news__prev">
+            <p class="subname">Большие скидки на квартиры в Ambassador house</p>
+            <div class="main_news__date">
+              <svg class="calendar"><use xlink:href="#calendar"></use></svg>
+              <span>30.09.2018</span><span>|</span><span>14:15</span>
+            </div>
+          </div>
+        </div>
+        <div class="main_news__item">
+          <figure class="effect-julia">
+            <img src="/img/main/project_3.jpg" alt=""/>
+            <figcaption>
+              <div class="main_news_prev">
+                <p>По ввоей сути рыба-текст является</p>
+                <p>фльтернативой современному</p>
+                <p>lorem ipsum, который вызывает у </p>
+                <p>некторых людей недоумение при </p>
+                <p>попытках прочитать рыбу текст. </p>
+              </div>
+              <a href="#"></a>
+            </figcaption>
+          </figure>
+          <div class="main_news__prev">
+            <p class="subname">Большие скидки в Ambassador house</p>
+            <div class="main_news__date">
+              <svg class="calendar"><use xlink:href="#calendar"></use></svg>
+              <span>30.09.2018</span><span>|</span><span>14:15</span>
+            </div>
+          </div>
+        </div>
+        <!-- end .main_news__item -->
+      </div>
+      <!-- end main_news__box -->
+    </div>
+  </section>
 
 
 <?php include_once('includes/footer.php') ?>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDehzKltJ2hA0p9O2BWYkXG2Z4q7A-3TTM&sensor=false"></script>
-<script src="/js/mapCrystal.js"></script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDehzKltJ2hA0p9O2BWYkXG2Z4q7A-3TTM&sensor=false"></script>
+<script defer src="/js/mapCrystal.js"></script>
 <script src="/js/ion.rangeSlider.js"></script>
 <script src="/js/range.js"></script>
   </body>

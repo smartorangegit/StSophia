@@ -49,8 +49,9 @@
       <div class="aside flex">
         <div class="header_lang">
           <ul>
-            <li><a href="#">Рус <svg width="10" height="10" class="grey"><use xlink:href="#arrow_down"></use></svg></a></li>
-            <!-- <li><a href="#">Укр</a></li> -->
+            <li><a href="#">RU <svg width="10" height="10" class="grey"><use xlink:href="#arrow_down"></use></svg></a></li>
+            <!-- <li><a href="#">UA</a></li> -->
+            <!-- <li><a href="#">EN</a></li> -->
           </ul>
         </div>
         <ul class="header_social">
@@ -85,8 +86,8 @@
       </ul>
       <div class="header_fixed_lang">
         <ul>
-          <li><a href="#">Рус <svg class="grey" width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-          <!-- <li><a href="#">Укр</a></li> -->
+          <li><a href="#">RU <svg class="grey" width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
+          <!-- <li><a href="#">UA</a></li> -->
         </ul>
       </div>
     </div>
