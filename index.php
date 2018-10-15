@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  
+
   <?php include_once('includes/header.php') ?>
 
     <section class="main_one">
@@ -20,17 +20,17 @@
       </ul>
       <div class="main_one__inner">
         <div class="wrapper">
-          <div class="main_one__name"></div>
-          <div class="main_one__descr"></div>
-          <a class="main_one__Link" href="#"><span>Смотреть комплекс</span><svg class="long_arrow"><use xlink:href="#long_arrow"></use></svg></a>
+          <div class="main_one__name wow fadeIn" data-wow-duration="1s"></div>
+          <div class="main_one__descr wow fadeIn" data-wow-duration="3s"></div>
+          <a class="main_one__Link wow fadeIn" href="#" data-wow-duration="7s"><span>Смотреть комплекс</span><svg class="long_arrow"><use xlink:href="#long_arrow"></use></svg></a>
         </div>
       </div>
       <div class="main_one__caption flex">
-        <div class="main_one__slide_left">
+        <div class="main_one__slide_left wow fadeInLeft" data-wow-duration="5s">
           <svg class="long_arrow" style="transform:scaleX(-1);"><use xlink:href="#long_arrow"></use></svg>
           <p>Назад</p>
         </div>
-        <div class="main_one__slide_right">
+        <div class="main_one__slide_right wow fadeInRight" data-wow-duration="5s">
           <svg class="long_arrow"><use xlink:href="#long_arrow"></use></svg>
           <p>Вперед</p>
         </div>
@@ -45,7 +45,7 @@
 
         <div class="main_project__box flex">
 
-          <div class="main_project__item">
+          <div class="main_project__item wow fadeIn">
             <figure class="effect-sadie">
   						<img src="/img/main/project_1.jpg" alt=""/>
   						<figcaption>
@@ -60,12 +60,12 @@
               <p class="content_text">г. Киев, ул. Ивана Франка 45</p>
             </div>
           </div>
-          <div class="main_project__item">
+          <div class="main_project__item wow fadeIn">
             <figure class="effect-sadie">
   						<img src="/img/main/project_2.jpg" alt=""/>
   						<figcaption>
   							<div class="main_project__logo">
-                  <img src="/img/logos/RR_new.svg" alt="Ambassador">
+                  <img src="/img/logos/white/RR_new.svg" alt="Ambassador">
                 </div>
   						</figcaption>
               <a href="#"></a>
@@ -75,12 +75,12 @@
               <p class="content_text">г. Киев, ул. Ивана Франка 45</p>
             </div>
           </div>
-          <div class="main_project__item">
+          <div class="main_project__item wow fadeIn">
             <figure class="effect-sadie">
   						<img src="/img/main/project_3.jpg" alt=""/>
   						<figcaption>
   							<div class="main_project__logo">
-                  <img src="/img/logos/hilton.png" alt="Hilton Kyiv">
+                  <img src="/img/logos/white/hilton.png" alt="Hilton Kyiv">
                 </div>
   						</figcaption>
               <a href="#"></a>
@@ -90,7 +90,7 @@
               <p class="content_text">г. Киев, ул. Ивана Франка 45</p>
             </div>
           </div>
-          <div class="main_project__item">
+          <div class="main_project__item wow fadeIn">
             <figure class="effect-sadie">
   						<img src="/img/main/project_4.jpg" alt=""/>
   						<figcaption>
@@ -105,12 +105,12 @@
               <p class="content_text">г. Киев, ул. Ивана Франка 45</p>
             </div>
           </div>
-          <div class="main_project__item">
+          <div class="main_project__item wow fadeIn">
             <figure class="effect-sadie">
   						<img src="/img/main/project_5.jpg" alt=""/>
   						<figcaption>
   							<div class="main_project__logo">
-                  <img src="/img/logos/Riviera.svg" alt="Ambassador">
+                  <img src="/img/logos/white/Riviera.svg" alt="Ambassador">
                 </div>
   						</figcaption>
               <a href="#"></a>
@@ -120,12 +120,12 @@
               <p class="content_text">г. Киев, ул. Ивана Франка 45</p>
             </div>
           </div>
-          <div class="main_project__item">
+          <div class="main_project__item wow fadeIn">
             <figure class="effect-sadie">
   						<img src="/img/main/project_6.jpg" alt=""/>
   						<figcaption>
   							<div class="main_project__logo">
-                  <img src="/img/logos/Lakes_col.svg" alt="Ambassador">
+                  <img src="/img/logos/white/Lakes_col.svg" alt="Ambassador">
                 </div>
   						</figcaption>
               <a href="#"></a>
@@ -135,12 +135,12 @@
               <p class="content_text">г. Киев, ул. Ивана Франка 45</p>
             </div>
           </div>
-          <div class="main_project__item">
+          <div class="main_project__item wow fadeIn">
             <figure class="effect-sadie">
   						<img src="/img/main/project_7.jpg" alt=""/>
   						<figcaption>
   							<div class="main_project__logo">
-                  <img src="/img/logos/Crystal.svg" alt="Ambassador">
+                  <img src="/img/logos/white/Crystal.svg" alt="Ambassador">
                 </div>
   						</figcaption>
               <a href="#"></a>
@@ -150,7 +150,7 @@
               <p class="content_text">г. Киев, ул. Ивана Франка 45</p>
             </div>
           </div>
-          <div class="main_project__item">
+          <div class="main_project__item wow fadeIn">
             <figure class="effect-sadie">
   						<img src="/img/main/project_8.jpg" alt=""/>
   						<figcaption>
@@ -165,7 +165,7 @@
               <p class="content_text">г. Киев, ул. Ивана Франка 45</p>
             </div>
           </div>
-          <div class="main_project__item">
+          <div class="main_project__item wow fadeIn">
             <figure class="effect-sadie">
   						<img src="/img/main/project_9.jpg" alt=""/>
   						<figcaption>
@@ -186,7 +186,8 @@
 
     </section>
     <section class="main_map">
-      <div class="main_map__inner" id="map"></div>
+      <div class="main_map__inner">
+      </div>
     </section>
     <section class="main_news">
       <div class="wrapper">
@@ -203,7 +204,7 @@
               <figcaption>
                 <div class="main_news_prev">
                   <p>По ввоей сути рыба-текст является</p>
-                  <p>фльтернативой современному</p>
+                  <p>альтернативой современному</p>
                   <p>lorem ipsum, который вызывает у </p>
                   <p>некторых людей недоумение при </p>
                   <p>попытках прочитать рыбу текст. </p>
@@ -279,7 +280,7 @@
         </div>
         <div class="content_name">Преимущества</div>
         <div class="main_advantages__box flex">
-          <div class="main_advantages__item">
+          <div class="main_advantages__item ">
             <div class="adv__name">Надежность: <br>10 лет на рынке </div>
             <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение. </div>
           </div>
@@ -287,7 +288,7 @@
             <div class="adv__name">Новаторство </div>
             <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.</div>
           </div>
-          <div class="main_advantages__item">
+          <div class="main_advantages__item ">
             <div class="adv__name">Уникальность</div>
             <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение. </div>
           </div>
@@ -300,7 +301,7 @@
     </section>
 
 <?php include_once('includes/footer.php') ?>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDehzKltJ2hA0p9O2BWYkXG2Z4q7A-3TTM&sensor=false"></script>
-<script src="/js/map.js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDehzKltJ2hA0p9O2BWYkXG2Z4q7A-3TTM&sensor=false"></script>
+<script src="/js/map.js"></script> -->
   </body>
 </html>

@@ -59,7 +59,7 @@
           <li><a href="#"><svg><use xlink:href="#fb"></use></svg></a></li>
         </ul>
       </div>
-      <div class="header_center"><svg class="header__logo" fill="#ffffff"><use xlink:href="#StSophia"></use></svg></div>
+      <a href="/" class="header_center"><svg class="header__logo" fill="#ffffff"><use xlink:href="#StSophia"></use></svg></a>
       <div class="aside_b">
         <div class="header__callback flex">
           <svg width="10" height="20" ><use xlink:href="#phone"></use></svg>
@@ -75,14 +75,14 @@
   </div> -->
   <div class="navigation">
     <div class="header_wrapper flex">
-      <div class="header_fixed__logo">
+      <a href="/" class="header_fixed__logo">
         <svg fill="#ffffff"><use xlink:href="#StSophia"></use></svg>
-      </div>
+      </a>
       <ul class="navigation__box">
-        <li><a class="nav_link" data-link="object" href="#">Объекты<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-        <li><a class="nav_link" data-link="about" href="#">О компании<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-        <li><a class="nav_link" data-link="news" href="#">Новости<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
-        <li><a href=""  href="#">Контакты</a></li>
+        <li><a class="nav_link" data-link="#objectInner" href="#">Объекты<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
+        <li><a class="nav_link" data-link="#aboutInner" href="#">О компании<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
+        <li><a class="nav_link" data-link="#newsInner" href="#">Новости<svg width="10" height="10"><use xlink:href="#arrow_down"></use></svg></a></li>
+        <li><a href="/contacts.php"  href="#">Контакты</a></li>
       </ul>
       <div class="header_fixed_lang">
         <ul>
@@ -96,13 +96,15 @@
 <!-- второстепенное меню при ховере -->
 <div class="menu_hover__outer">
   <div class="menu_hover">
-    <div id="object" class="wrapper flex">
+
+    <!-- /*inner for group OBJECTS*/ -->
+    <div id="objectInner" class="wrapper flex">
       <a href="#" class="menu_hover__item">
         <div class="menu_hover_img">
           <img src="img/main/hover_menu/1.jpg" alt="">
         </div>
         <figcaption>
-          <div class="subname">Название</div>
+          <div class="subname">Комплекс1</div>
           <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
         </figcaption>
       </a>
@@ -111,7 +113,7 @@
           <img src="img/main/hover_menu/2.jpg" alt="">
         </div>
         <figcaption>
-          <div class="subname">Название</div>
+          <div class="subname">Комплекс2</div>
           <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
         </figcaption>
       </a>
@@ -120,7 +122,7 @@
           <img src="img/main/hover_menu/3.jpg" alt="">
         </div>
         <figcaption>
-          <div class="subname">Название</div>
+          <div class="subname">Комплекс3</div>
           <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
         </figcaption>
       </a>
@@ -129,7 +131,7 @@
           <img src="img/main/hover_menu/4.jpg" alt="">
         </div>
         <figcaption>
-          <div class="subname">Название</div>
+          <div class="subname">Комплекс4</div>
           <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
         </figcaption>
       </a>
@@ -138,12 +140,112 @@
           <img src="img/main/hover_menu/5.jpg" alt="">
         </div>
         <figcaption>
-          <div class="subname">Название</div>
+          <div class="subname">Комплекс5</div>
           <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
         </figcaption>
       </a>
     </div>
+    <!-- /*inner for group About*/ -->
+    <div id="aboutInner" class="wrapper flex">
+      <a href="#" class="menu_hover__item">
+        <div class="menu_hover_img">
+          <img src="img/main/hover_menu/1.jpg" alt="">
+        </div>
+        <figcaption>
+          <div class="subname">История успеха</div>
+          <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
+        </figcaption>
+      </a>
+      <a href="#" class="menu_hover__item">
+        <div class="menu_hover_img">
+          <img src="img/main/hover_menu/2.jpg" alt="">
+        </div>
+        <figcaption>
+          <div class="subname">Миссия</div>
+          <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
+        </figcaption>
+      </a>
+      <a href="#" class="menu_hover__item">
+        <div class="menu_hover_img">
+          <img src="img/main/hover_menu/3.jpg" alt="">
+        </div>
+        <figcaption>
+          <div class="subname">Партнеры</div>
+          <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
+        </figcaption>
+      </a>
+      <a href="#" class="menu_hover__item">
+        <div class="menu_hover_img">
+          <img src="img/main/hover_menu/4.jpg" alt="">
+        </div>
+        <figcaption>
+          <div class="subname">Достижения</div>
+          <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
+        </figcaption>
+      </a>
+      <a href="#" class="menu_hover__item">
+        <div class="menu_hover_img">
+          <img src="img/main/hover_menu/5.jpg" alt="">
+        </div>
+        <figcaption>
+          <div class="subname">О компании</div>
+          <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
+        </figcaption>
+      </a>
+    </div>
+    <!-- /*end inner for group news*/ -->
+    <div id="newsInner" class="wrapper flex">
+      <a href="#" class="menu_hover__item">
+        <div class="menu_hover_img">
+          <img src="img/main/hover_menu/1.jpg" alt="">
+        </div>
+        <figcaption>
+          <div class="subname">Новость1</div>
+          <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
+        </figcaption>
+      </a>
+      <a href="#" class="menu_hover__item">
+        <div class="menu_hover_img">
+          <img src="img/main/hover_menu/2.jpg" alt="">
+        </div>
+        <figcaption>
+          <div class="subname">Новость2</div>
+          <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
+        </figcaption>
+      </a>
+      <a href="#" class="menu_hover__item">
+        <div class="menu_hover_img">
+          <img src="img/main/hover_menu/3.jpg" alt="">
+        </div>
+        <figcaption>
+          <div class="subname">Новость3</div>
+          <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
+        </figcaption>
+      </a>
+      <a href="#" class="menu_hover__item">
+        <div class="menu_hover_img">
+          <img src="img/main/hover_menu/4.jpg" alt="">
+        </div>
+        <figcaption>
+          <div class="subname">Новость4</div>
+          <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
+        </figcaption>
+      </a>
+      <a href="#" class="menu_hover__item">
+        <div class="menu_hover_img">
+          <img src="img/main/hover_menu/5.jpg" alt="">
+        </div>
+        <figcaption>
+          <div class="subname">Новость5</div>
+          <div class="content_text">По своей сути рыбатекст является альтернативой традиционному lorem</div>
+        </figcaption>
+      </a>
+    </div>
+    <!-- /*end inner for group news*/ -->
   </div>
 </div>
+<style media="screen">
+  #newsInner, #aboutInner, #objectInner{display: none;}
+</style>
 <!-- конец второстепенного меню при ховере -->
 </div>

@@ -2,27 +2,27 @@ function mapMaker(id, longt, lat) {
 	var id = id;
 	flag_item = 1;
 	var
-		contentString2 = '<div class="map__info-marker">RRYC</div>',
-		contentString3 = '<div class="map__info-marker">Riviera</div>', //ул. Раисы Окипной, 18,
-		contentString4 = '<div class="map__info-marker">Hilton</div>',
-		contentString5 = '<div class="map__info-marker">Cristal Park</div>',
-		contentString6 = '<div class="map__info-marker">Arsenal</div>',
-		contentString7 = '<div class="map__info-marker">The Lakes</div>', //11, Ясинуватський провулок,
-		contentString8 = '<div class="map__info-marker">Ambassador</div>';// вул.І Франка, 4В
-		contentString9 = '<div class="map__info-marker">Alpina</div>';
+		// contentString2 = '<div class="map__info-marker">RRYC</div>',
+		// contentString3 = '<div class="map__info-marker">Riviera</div>', //ул. Раисы Окипной, 18,
+		// contentString4 = '<div class="map__info-marker">Hilton</div>',
+		// contentString5 = '<div class="map__info-marker">Cristal Park</div>',
+		// contentString6 = '<div class="map__info-marker">Arsenal</div>',
+		// contentString7 = '<div class="map__info-marker">The Lakes</div>', //11, Ясинуватський провулок,
+		// contentString8 = '<div class="map__info-marker">Ambassador</div>';// вул.І Франка, 4В
+		// contentString9 = '<div class="map__info-marker">Alpina</div>';
 		contentString10 = '<div class="map__info-marker">StSophia</div>';
 
 	var locations = [
 				// [contentString1, 50.439367, 30.544927, "/img/map/pin/bank.png"],
-					[contentString2, 50.447289, 30.587986, "/img/main/pin/rryc.png"],
-					[contentString3, 50.447866, 30.588796, "/img/main/pin/Riviera.png"],
-					[contentString4, 50.445337, 30.504948, "/img/main/pin/hilton.png"],
-					[contentString5, 50.455815, 30.452238, "/img/main/pin/Crystal.png"],
-					[contentString6, 50.438094, 30.557961, "/img/main/pin/Arsenal-logo.png"],
-					[contentString7, 50.409298, 30.507014, "/img/main/pin/Lakes.png"],
-					[contentString8, 50.450471, 30.509204, "/img/main/pin/Ambassador.png"],
-					[contentString9, 50.425056, 30.500760, "/img/main/pin/alpina.png"],
-					[contentString10, 50.433256, 30.551712, "/img/main/pin/sophia.png"],
+					// [contentString2, 50.447289, 30.587986, "/img/main/pin/rryc.png"],
+					// [contentString3, 50.447866, 30.588796, "/img/main/pin/Riviera.png"],
+					// [contentString4, 50.445337, 30.504948, "/img/main/pin/hilton.png"],
+					// [contentString5, 50.455815, 30.452238, "/img/main/pin/Crystal.png"],
+					// [contentString6, 50.438094, 30.557961, "/img/main/pin/Arsenal-logo.png"],
+					// [contentString7, 50.409298, 30.507014, "/img/main/pin/Lakes.png"],
+					// [contentString8, 50.450471, 30.509204, "/img/main/pin/Ambassador.png"],
+					// [contentString9, 50.425056, 30.500760, "/img/main/pin/alpina.png"],
+					[contentString10, 50.433256, 30.551712, "/img/pin/sophia.png"],
       ];
 			// 50.438000, 30.520200
 	var centerX = 50.438000;
@@ -51,7 +51,7 @@ function mapMaker(id, longt, lat) {
 	        map: map,
 	        icon: {
 	            url: locations[i][3],
-	            // scaledSize: new google.maps.Size(30, 40)
+	            scaledSize: new google.maps.Size(90, 120)
 	        }
 	    });
 	    infowindow.setContent(locations[i][0]);
