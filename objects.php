@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Объекты | StSophia Homes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <?php include_once('includes/header.php') ?>

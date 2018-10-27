@@ -180,12 +180,31 @@
               <p class="content_text">г. Киев, ул. Ивана Франка 45</p>
             </div>
           </div>
+          <div class="main_project__item wow fadeIn">
+            <figure class="effect-sadie">
+  						<img src="/img/main/project_10.jpg" alt=""/>
+  						<figcaption>
+  							<div class="main_project__logo">
+                  <img src="/img/logos/white/Zitadelle.svg" alt="Zitadelle">
+                </div>
+  						</figcaption>
+              <a href="#"></a>
+  					</figure>
+            <div class="main_project__descr">
+              <p class="subname">Zitadelle</p>
+              <p class="content_text">г. Киев, ул. Лаврская, 16</p>
+            </div>
+          </div>
 
         </div>
       </div>
 
     </section>
     <section class="main_map">
+      <div class="content_name is_mobile">
+        карта объектов
+
+      </div>
       <div class="main_map__inner">
       </div>
     </section>
@@ -220,7 +239,7 @@
               </div>
             </div>
           </div>
-          <div class="main_news__item">
+          <div class="main_news__item no_mobile">
             <figure class="effect-julia">
               <img src="/img/main/project_3.jpg" alt=""/>
               <figcaption>
@@ -275,8 +294,8 @@
     <section class="main_advantages">
       <div class="wrapper">
         <div class="main_advantages_images flex">
-          <img class="main_advantages_img_1" src="/img/main/adv_1.jpg" alt="">
-          <img class="main_advantages_img_2" src="/img/main/adv_2.jpg" alt="">
+          <img class="main_advantages_img_1 wow fadeInUp" data-wow-duration="2s" src="/img/main/adv_1.jpg" alt="">
+          <img class="main_advantages_img_2 wow fadeInRight" data-wow-duration="2s" src="/img/main/adv_2.jpg" alt="">
         </div>
         <div class="content_name">Преимущества</div>
         <div class="main_advantages__box flex">
@@ -301,7 +320,5 @@
     </section>
 
 <?php include_once('includes/footer.php') ?>
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDehzKltJ2hA0p9O2BWYkXG2Z4q7A-3TTM&sensor=false"></script>
-<script src="/js/map.js"></script> -->
   </body>
 </html>

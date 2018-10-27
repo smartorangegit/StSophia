@@ -14,10 +14,6 @@
       <div class="wrapper">
         <div class="content_name">Наши контакты</div>
         <div class="contacts__box flex">
-          <!-- <div class="footer__item">
-            <div class="footer_name">&nbsp;</div>
-            <svg class="footer_logo"><use xlink:href="#StSophia"></use></svg>
-          </div> -->
           <div class="footer__item">
             <div class="footer_name">Контакты</div>
             <p class="flex">
@@ -35,7 +31,7 @@
             <p>ул. Лаврская, 16 лит «В»</p>
           </div>
           <div class="footer__item">
-            <div class="footer_name">Follow us</div>
+            <div class="footer_name">Соц сети</div>
             <div class="footer_social flex">
               <a href="#" class="footer_social__item"><svg><use xlink:href="#instagram"></use></svg></a>
               <a href="#" class="footer_social__item"><svg><use xlink:href="#fb"></use></svg></a>

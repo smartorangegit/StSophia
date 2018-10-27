@@ -1,4 +1,21 @@
 <div class="overlay"></div>
+<div id="callback-popup" class="callback-popup">
+  <div class="content_name">Заказать звонок </div>
+  <form class="" action="#" method="post">
+    <div class="input_outer">
+      <input type="name" name="name" autocomplete="name" placeholder="Имя, фамилия" value="">
+    </div>
+    <div class="input_outer">
+      <input id="phone" type="tel" name="tel" autocomplete="home tel" placeholder="Телефон" value="">
+    </div>
+    <input type="submit" name="" value="Отправить сообщение">
+  </form>
+  <div class="close_callback" id="close_callback">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#565c64"></path><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#565c64"></path></svg>
+  </div>
+
+
+</div>
 <div class="footer">
   <div class="wrapper">
     <div class="footer__box flex">
@@ -10,7 +27,7 @@
       <div class="footer__item">
         <div class="footer_name wow fadeIn">Контакты</div>
         <p class="flex wow fadeInUp">
-          <svg class="footer_contact_svg"><use xlink:href="#phone"></use></svg>
+          <svg class="footer_contact_svg svg_phone"><use xlink:href="#phone"></use></svg>
           <span>+380 (044) 492 35 05</span>
         </p>
         <p class="flex wow fadeInUp">
@@ -35,13 +52,15 @@
           <a href="#" class="footer_social__item wow fadeIn" data-wow-duration="2.5s"><svg><use xlink:href="#google1"></use></svg></a>
         </div>
       </div>
-    </div>
+      <div class="footer_subscribe_wrapper">
+        <div class="footer_name wow fadeInUp" data-wow-duration="2s"><span class="is_desktop">подписаться на рассылку новостей</span><span class="is_mobile">рассылкa новостей</span><svg class="footer_form_svg" style="width: 19px; height: 15px;"><use xlink:href="#letter"></use></svg> </div>
+        <form class="footer_subscribe flex " action="#" method="post" >
+          <input class="wow fadeInUp" type="email" name="" value="" placeholder="Ваш e-mail" data-wow-duration="2.4s">
+          <input class="wow fadeInUp" type="submit" name="" value="Подписаться" data-wow-duration="2.4s">
+        </form>
+      </div>
 
-    <div class="footer_name wow fadeInUp" data-wow-duration="2s">подписаться на рассылку новостей <svg class="footer_form_svg" style="width: 19px; height: 15px;"><use xlink:href="#letter"></use></svg> </div>
-    <form class="footer_subscribe flex " action="#" method="post" >
-      <input class="wow fadeInUp" type="email" name="" value="" placeholder="Ваш e-mail" data-wow-duration="2.4s">
-      <input class="wow fadeInUp" type="submit" name="" value="Подписаться" data-wow-duration="2.4s">
-    </form>
+    </div>
   </div>
 </div>
 <div class="copyright">

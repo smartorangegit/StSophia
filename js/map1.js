@@ -27,12 +27,15 @@ function mapMaker(id, longt, lat) {
 			// 50.438000, 30.520200
 	var centerX = 50.438000;
 	var centerY = 30.520200;
+	var zoomPos = 13;
 
 	if($(window).width() < 748) {
-		centerY = locations[0][2];
+		// centerY = locations[0][2];
+		zoomPos = 12;
+
 	}
 	var map = new google.maps.Map(document.getElementById(id), {
-			zoom: 13,
+			zoom: zoomPos,
 			scrollwheel: false,
 			mapTypeControl: false,
 			streetViewControl: false,

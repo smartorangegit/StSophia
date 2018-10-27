@@ -115,6 +115,14 @@ $(function() {
             }
         })(marker1, content));
     }
+    var centerX = 50.452379;
+  	var centerY = 30.49924;
+
+    if($(window).width() < 748) {
+      var centerX = 50.433256;
+    	var centerY = 30.551712;
+
+  	}
       // Create the map
     var map = new google.maps.Map($('#uc_sales__inner')[0], {
         zoom: 12,
@@ -124,7 +132,7 @@ $(function() {
         streetViewControl: false,
         scrollwheel: true,
         fullscreenControl: false,
-        center: new google.maps.LatLng(50.452379, 30.459924)
+        center: new google.maps.LatLng(centerX, centerY)
     });
 
     for (i = 0; i < markers1.length; i++) {

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Новости | StSophia Homes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
   <?php include_once('includes/header.php') ?>
@@ -25,7 +25,7 @@
                 <p>некторых людей недоумение при </p>
                 <p>попытках прочитать рыбу текст. </p>
               </div>
-              <a href="#"></a>
+              <a href="/news_template.php"></a>
             </figcaption>
           </figure>
           <div class="main_news__prev">
@@ -48,7 +48,7 @@
                 <p>некторых людей недоумение при </p>
                 <p>попытках прочитать рыбу текст. </p>
               </div>
-              <a href="#"></a>
+              <a href="/news_template.php"></a>
             </figcaption>
           </figure>
           <div class="main_news__prev">
@@ -71,7 +71,7 @@
                 <p>некторых людей недоумение при </p>
                 <p>попытках прочитать рыбу текст. </p>
               </div>
-              <a href="#"></a>
+              <a href="/news_template.php"></a>
             </figcaption>
           </figure>
           <div class="main_news__prev">
@@ -94,7 +94,7 @@
                 <p>некторых людей недоумение при </p>
                 <p>попытках прочитать рыбу текст. </p>
               </div>
-              <a href="#"></a>
+              <a href="/news_template.php"></a>
             </figcaption>
           </figure>
           <div class="main_news__prev">
@@ -117,7 +117,7 @@
                 <p>некторых людей недоумение при </p>
                 <p>попытках прочитать рыбу текст. </p>
               </div>
-              <a href="#"></a>
+              <a href="/news_template.php"></a>
             </figcaption>
           </figure>
           <div class="main_news__prev">
@@ -140,7 +140,7 @@
                 <p>некторых людей недоумение при </p>
                 <p>попытках прочитать рыбу текст. </p>
               </div>
-              <a href="#"></a>
+              <a href="/news_template.php"></a>
             </figcaption>
           </figure>
           <div class="main_news__prev">

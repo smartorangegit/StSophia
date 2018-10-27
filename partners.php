@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Партнеры | StSophia Homes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <div class="hidden__box">
@@ -33,10 +33,10 @@
         </div>
         <div class="partners_item__content flex">
           <div class="partners__logo">
-            <img src="/img/logos/Riviera.svg" alt="Riviera Riverside">
+            <img src="/img/logos/Riviera.svg" alt="Riviera Riverside" style="position:relative; top: 6px;">
           </div>
           <div class="partners__descr">
-            пришвартовываться в специально созданной для этого частной гавани. Если Вы предпочитаете спокойный отдых, у Вас будет возможность расслабиться и понаблюдать за течением жизни в тихом живописном парке, или провести время в салоне красоты, созданном, учитывая новейшие технологии в области косметологии. Независимо от того, какой именно отдых Вы выбираете, у Вас всегда будет время, место и возможность по максимуму наслаждиться жизнью в Riviera Riverside.
+            пришварто вываться в специально созданной для этого частной гавани. Если Вы предпочитаете спокойный отдых, у Вас будет возможность расслабиться и понаблюдать за течением жизни в тихом живописном парке, или провести время в салоне красоты, созданном, учитывая новейшие технологии в области косметологии. Независимо от того, какой именно отдых Вы выбираете, у Вас всегда будет время, место и возможность по максимуму наслаждиться жизнью в Riviera Riverside.
           </div>
         </div>
       </div>
