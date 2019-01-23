@@ -9,7 +9,7 @@
   </head>
   <body class="uc-body">
 
-  <?php include_once('includes/hidden_boxUC.php') ?>
+ <?php include_once('includes/hidden_boxUC.php') ?>
   <?php include_once('includes/header.php') ?>
 
 <section class="uc_nav">
@@ -543,9 +543,12 @@
     <div class="content_name">Ход строительства</div>
     <div class="uc_bulding_gallery__inner">
       <div class="uc_bulding_gallery__box">
-        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__1">
+        <div href="/img/building/1.jpg" class="uc_bulding_gallery__item uc_bulding_gallery__item__1">
           <img src="/img/building/1.jpg" alt="">
           <div class="uc_building__caption"> Сентябрь <span class="bold">2-й дом </span> </div>
+            <a href="/img/building/1.jpg" data-fancybox="gallery0"></a>
+            <a href="/img/building/2.jpg" data-fancybox="gallery0"></a>
+            <a href="/img/building/3.jpg" data-fancybox="gallery0"></a>
         </div>
         <div class="uc_bulding_gallery__item uc_bulding_gallery__item__2"><img src="/img/building/2.jpg" alt=""></div>
         <div class="uc_bulding_gallery__item uc_bulding_gallery__item__3"><img src="/img/building/3.jpg" alt=""></div>
@@ -556,9 +559,10 @@
         <div class="uc_bulding_gallery__item uc_bulding_gallery__item__8"><img src="/img/building/4.jpg" alt=""></div>
         <div class="uc_bulding_gallery__item uc_bulding_gallery__item__9"><img src="/img/building/1.jpg" alt=""></div>
         <div class="uc_bulding_gallery__item uc_bulding_gallery__item__10"><img src="/img/building/2.jpg" alt=""></div>
-        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__11"><img src="/img/building/3.jpg" alt=""></div>
-        <div class="uc_bulding_gallery__item uc_bulding_gallery__item__12"><img src="/img/building/4.jpg" alt=""></div>
+        <div  class="uc_bulding_gallery__item uc_bulding_gallery__item__11"><img src="/img/building/3.jpg" alt=""></div>
+        <div  class="uc_bulding_gallery__item uc_bulding_gallery__item__12"><img src="/img/building/4.jpg" alt=""></div>
       </div>
+  
       <div class="build__prev"><svg enable-background="new 0 0 792 792" height="100%" viewBox="0 0 792 792" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#ffffff" transform="matrix(-1 0 0 1 792 0)"></path></svg></div>
       <div class="build__next"><svg enable-background="new 0 0 792 792" height="100%" viewBox="0 0 792 792" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#ffffff"></path></svg></div>
       <ul class="uc_bulding_gallery__nav">
@@ -712,5 +716,6 @@
 <script defer src="/js/mapCrystal.js"></script>
 <script src="/js/ion.rangeSlider.js"></script>
 <script src="/js/range.js"></script>
+<script src="/js/jquery.fancybox.min.js"></script>
   </body>
 </html>

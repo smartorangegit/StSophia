@@ -9,6 +9,8 @@
   </head>
   <body>
 
+  <?php include_once('includes/preloader.php') ?>
+
   <?php include_once('includes/header.php') ?>
 
     <section class="main_one">
@@ -214,7 +216,7 @@
           <div class="content_name">
             новости
           </div>
-          <a class="grey_button" href="/news">Cмотреть все новости</a>
+          <a class="grey_button btn-animated" href="/news">Cмотреть все новости</a>
         </div>
         <div class="main_news__box flex">
           <div class="main_news__item">
@@ -290,6 +292,18 @@
           </div>
         </div>
       </div>
+      <div class="img_progress_block" style="overflow:hidden;">
+        <div class="anime_block block1">
+          <img src="/img/main/block1.png" alt="">
+        </div>
+        <div class="anime_block block2">
+          <img src="/img/main/block1.png" alt="">
+        </div>
+        <div class="anime_block block3">
+          <img src="/img/main/block1.png" alt="">
+        </div>
+
+      </div>
     </section>
     <section class="main_advantages">
       <div class="wrapper">
@@ -320,5 +334,32 @@
     </section>
 
 <?php include_once('includes/footer.php') ?>
+<!-- <script type="text/javascript">
+$(window).mousemove(function(e) {
+    var change;
+    var xpos=e.clientX;
+    var ypos=e.clientY;
+    var left= change*20;
+    var xpos= -xpos*2;
+    var xpos1 = - 50 + ( xpos/200 )+'%';
+    var xpos2 = - 50 + ( xpos/400 ) +'%';
+    var xpos3 = - 50 + ( xpos/650 ) +'%';
+
+    $('.block1').css({
+      'transform':'translateX('+ xpos1 +')',
+      '-webkit-transform':'translateX('+ xpos1 +')',
+    });
+    $('.block2').css({
+      'transform':'translateX('+ xpos2 +')',
+      '-webkit-transform':'translateX('+ xpos2 +')',
+    });
+    $('.block3').css({
+      'transform':'translateX('+ xpos3 +')',
+      '-webkit-transform':'translateX('+ xpos3 +')',
+    });
+//
+  });
+
+</script> -->
   </body>
 </html>

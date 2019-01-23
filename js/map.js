@@ -10,7 +10,7 @@ function mapMaker(id, longt, lat) {
 		// contentString7 = '<div class="map__info-marker">The Lakes</div>', //11, Ясинуватський провулок,
 		// contentString8 = '<div class="map__info-marker">Ambassador</div>';// вул.І Франка, 4В
 		// contentString9 = '<div class="map__info-marker">Alpina</div>';
-		contentString10 = '<div class="map__info-marker">StSophia</div>';
+		contentString10 = '<div class="map__info-marker">' + '<p class="content_name">StSophia</p>'+'<p class="content_text">офис продаж</p>'+'<a class="grey_button" href="https://goo.gl/maps/F72Hw3kXcQq">Открыть в Google Maps</a></div>';
 
 	var locations = [
 				// [contentString1, 50.439367, 30.544927, "/img/map/pin/bank.png"],

@@ -12,7 +12,7 @@
   <?php include_once('includes/hidden_boxUC.php') ?>
   <?php include_once('includes/header.php') ?>
 
-<section class="fb_nav">
+<!-- <section class="fb_nav">
   <ul class="header_wrapper flex">
     <li><a href="#fb_project">О проекте</a></li>
     <li><a href="#fb_complex">О комплексе</a></li>
@@ -23,7 +23,7 @@
     <li><a href="#fb_flats">Квартиры</a></li>
     <li><a href="#fb_filter">Подбор по параметрам</a></li>
   </ul>
-</section>
+</section> -->
 
 <section class="scrollspy fb_project wow fadeIn" id="fb_project">
   <div class="fb_project__box light_box wow fadeIn">

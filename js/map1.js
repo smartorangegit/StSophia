@@ -10,7 +10,9 @@ function mapMaker(id, longt, lat) {
 		contentString7 = '<div class="map__info-marker">' + '<p class="content_name">The Lakes</p>'+'<p class="content_text">г.Киев, Ясиноватский переулок, 11</p>'+'<a class="grey_button" href="https://goo.gl/maps/c2m7B8C2Pwx" target="_blank">Открыть в Google Maps</a></div>';
 		contentString8 = '<div class="map__info-marker">' + '<p class="content_name">Ambassador</p>'+'<p class="content_text">г.Киев, ул.Франка, 4В</p>'+'<a class="grey_button" href="https://goo.gl/maps/K13Tm9irzS12" target="_blank">Открыть в Google Maps</a></div>';
 		contentString9 = '<div class="map__info-marker">' + '<p class="content_name">Alpina</p>'+'<p class="content_text">г.Киев</p>'+'<a class="grey_button" href="">Открыть в Google Maps</a></div>';
-		contentString10 = '<div class="map__info-marker">StSophia</div>';
+		contentString10 = '<div class="map__info-marker">' + '<p class="content_name">StSophia</p>'+'<p class="content_text">офис продаж</p>'+'<a class="grey_button" href="https://goo.gl/maps/F72Hw3kXcQq">Открыть в Google Maps</a></div>';
+
+		// contentString10 = '<div class="map__info-marker">StSophia</div>';
 
 	var locations = [
 		// [contentString1, 50.439367, 30.544927, "/img/pin/bank.png"],
@@ -22,7 +24,7 @@ function mapMaker(id, longt, lat) {
 			[contentString7, 50.409298, 30.507014, "/img/pin/Lakes.png"],
 			[contentString8, 50.450471, 30.509204, "/img/pin/ambassador.png"],
 			[contentString9, 50.425056, 30.500760, "/img/pin/alpina.png"],
-			[contentString10, 50.433256, 30.551712, "/img/pin/sophia.png"],
+			[contentString10, 50.433177, 30.550730, "/img/pin/sophia.png"],
       ];
 			// 50.438000, 30.520200
 	var centerX = 50.438000;

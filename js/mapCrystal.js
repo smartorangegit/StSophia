@@ -2,12 +2,21 @@ $(function() {
     filterMarkers = function (category) {
         for (i = 0; i < markers1.length; i++) {
             marker = gmarkers1[i];
+            // markerMain = gmarkers1[0];
+
+            /*находим маркер комплекса и віводим его в любом случае*/
+            var markerMain = gmarkers1.find(item => item.category === 'main');
+            // console.log(item);
+
+
             if (marker.category == category || category == 'all') {
                 marker.setMap(map);
+                markerMain.setMap(map);
                 // marker.setAnimation(google.maps.Animation.DROP);
             }
             else {
-                marker.setMap(null)
+                marker.setMap(null);
+                markerMain.setMap(map);
             }
         }
     }
@@ -16,8 +25,9 @@ $(function() {
     var infowindow = new google.maps.InfoWindow({
         content: ''
     });
+
     markers1 = [
-                ['0', '', 50.451456, 30.597852, 'apteka', '/img/pin/apteka.png', 'Аптека Низких Цен'],
+                ['0', '', 50.447925, 30.594761, 'main', '/img/pin/Crystal.png', 'CRYSTAL PARK; <br> ул.Р.Окипной , 7'],
                 ['1', '', 50.456821, 30.623900, 'medicine', '/img/pin/medicine.png', 'КГКБ №2'],
                 ['2', '', 50.456937, 30.586023, 'univer', '/img/pin/univer.png', 'Колледж им.Сухомлинского'],
                 ['3', '', 50.451685, 30.611413, 'school', '/img/pin/school.png', 'Школа #148'],
@@ -26,7 +36,7 @@ $(function() {
                 ['6', '', 50.453349, 30.598362, 'mall', '/img/pin/mall.png', 'Торговый центр'],
                 ['7', '', 50.453605, 30.594232, 'market', '/img/pin/market.png', 'Novus'],
                 ['8', '', 50.458501, 30.595862, 'school', '/img/pin/school.png', 'Школа №65'],
-                ['9', '', 50.447925, 30.594761, 'main', '/img/pin/Crystal.png', 'CRYSTAL PARK; <br> ул.Р.Окипной , 7'],
+                ['9', '', 50.451456, 30.597852, 'apteka', '/img/pin/apteka.png', 'Аптека Низких Цен'],
                                 ];
     function addMarker(marker) {
         var category = marker[4];
@@ -61,7 +71,7 @@ $(function() {
         mapTypeControl: false,
         scaleControl: false,
         streetViewControl: false,
-        scrollwheel: true,
+        scrollwheel: false,
         fullscreenControl: false,
         center: new google.maps.LatLng(50.449325, 30.591628)
     });
